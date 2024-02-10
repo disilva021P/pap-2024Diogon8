@@ -16,6 +16,7 @@ namespace Gestao_Admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new LoginAdmin());
         }
     }

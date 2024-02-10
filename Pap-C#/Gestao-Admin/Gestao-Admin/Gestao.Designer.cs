@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestao));
             this.GestaoForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.Menu = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_menu = new Guna.UI2.WinForms.Guna2CircleButton();
             this.PanelPrincipal = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.Menu = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
+            this.btnOcorrencias = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLugares = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPagamentos = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSair = new Guna.UI2.WinForms.Guna2Button();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,32 +51,6 @@
             this.GestaoForm.ContainerControl = this;
             this.GestaoForm.DockIndicatorTransparencyValue = 0.6D;
             this.GestaoForm.TransparentWhileDrag = true;
-            // 
-            // Menu
-            // 
-            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.Menu.Controls.Add(this.guna2Panel9);
-            this.Menu.Controls.Add(this.guna2Panel8);
-            this.Menu.Controls.Add(this.guna2Panel7);
-            this.Menu.Controls.Add(this.guna2Panel6);
-            this.Menu.Controls.Add(this.guna2Panel5);
-            this.Menu.Controls.Add(this.guna2Panel4);
-            this.Menu.Controls.Add(this.guna2Panel3);
-            this.Menu.Controls.Add(this.guna2Panel2);
-            this.Menu.Controls.Add(this.guna2Panel1);
-            this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu.Location = new System.Drawing.Point(0, 0);
-            this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(121, 1013);
-            this.Menu.TabIndex = 0;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 29);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel1.TabIndex = 0;
             // 
             // btn_menu
             // 
@@ -104,74 +76,158 @@
             // 
             this.PanelPrincipal.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelPrincipal.Location = new System.Drawing.Point(121, 0);
+            this.PanelPrincipal.Location = new System.Drawing.Point(120, 0);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(1821, 1013);
+            this.PanelPrincipal.Size = new System.Drawing.Size(1822, 1013);
             this.PanelPrincipal.TabIndex = 2;
             // 
-            // guna2Panel2
+            // btnDashboard
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(3, 135);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel2.TabIndex = 1;
+            this.btnDashboard.Animated = true;
+            this.btnDashboard.BorderRadius = 25;
+            this.btnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnDashboard.Location = new System.Drawing.Point(5, 56);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(110, 106);
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Panel3
+            // Menu
             // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(3, 241);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel3.TabIndex = 2;
+            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.Menu.Controls.Add(this.btnSair);
+            this.Menu.Controls.Add(this.btnPagamentos);
+            this.Menu.Controls.Add(this.btnLugares);
+            this.Menu.Controls.Add(this.btnOcorrencias);
+            this.Menu.Controls.Add(this.btnUsers);
+            this.Menu.Controls.Add(this.btnDashboard);
+            this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Menu.Location = new System.Drawing.Point(0, 0);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(120, 1013);
+            this.Menu.TabIndex = 0;
             // 
-            // guna2Panel4
+            // btnUsers
             // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(3, 347);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel4.TabIndex = 3;
+            this.btnUsers.Animated = true;
+            this.btnUsers.BorderRadius = 25;
+            this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUsers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
+            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnUsers.Location = new System.Drawing.Point(5, 204);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(0);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnUsers.Size = new System.Drawing.Size(110, 106);
+            this.btnUsers.TabIndex = 1;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Panel5
+            // btnOcorrencias
             // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel5.Location = new System.Drawing.Point(3, 453);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel5.TabIndex = 4;
+            this.btnOcorrencias.Animated = true;
+            this.btnOcorrencias.BorderRadius = 25;
+            this.btnOcorrencias.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOcorrencias.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOcorrencias.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOcorrencias.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOcorrencias.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnOcorrencias.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnOcorrencias.ForeColor = System.Drawing.Color.White;
+            this.btnOcorrencias.Image = ((System.Drawing.Image)(resources.GetObject("btnOcorrencias.Image")));
+            this.btnOcorrencias.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnOcorrencias.Location = new System.Drawing.Point(5, 326);
+            this.btnOcorrencias.Margin = new System.Windows.Forms.Padding(0);
+            this.btnOcorrencias.Name = "btnOcorrencias";
+            this.btnOcorrencias.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnOcorrencias.Size = new System.Drawing.Size(110, 106);
+            this.btnOcorrencias.TabIndex = 2;
+            this.btnOcorrencias.Text = "Ocorrências";
+            this.btnOcorrencias.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Panel6
+            // btnLugares
             // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel6.Location = new System.Drawing.Point(3, 559);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel6.TabIndex = 5;
+            this.btnLugares.Animated = true;
+            this.btnLugares.BorderRadius = 25;
+            this.btnLugares.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLugares.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLugares.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLugares.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLugares.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnLugares.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnLugares.ForeColor = System.Drawing.Color.White;
+            this.btnLugares.Image = ((System.Drawing.Image)(resources.GetObject("btnLugares.Image")));
+            this.btnLugares.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnLugares.Location = new System.Drawing.Point(5, 599);
+            this.btnLugares.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLugares.Name = "btnLugares";
+            this.btnLugares.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnLugares.Size = new System.Drawing.Size(110, 106);
+            this.btnLugares.TabIndex = 3;
+            this.btnLugares.Text = "Lugares";
+            this.btnLugares.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Panel7
+            // btnPagamentos
             // 
-            this.guna2Panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel7.Location = new System.Drawing.Point(3, 665);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel7.TabIndex = 6;
+            this.btnPagamentos.Animated = true;
+            this.btnPagamentos.BorderRadius = 25;
+            this.btnPagamentos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPagamentos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPagamentos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPagamentos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPagamentos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnPagamentos.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnPagamentos.ForeColor = System.Drawing.Color.White;
+            this.btnPagamentos.Image = ((System.Drawing.Image)(resources.GetObject("btnPagamentos.Image")));
+            this.btnPagamentos.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPagamentos.Location = new System.Drawing.Point(5, 751);
+            this.btnPagamentos.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPagamentos.Name = "btnPagamentos";
+            this.btnPagamentos.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnPagamentos.Size = new System.Drawing.Size(110, 106);
+            this.btnPagamentos.TabIndex = 4;
+            this.btnPagamentos.Text = "Pagamentos";
+            this.btnPagamentos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPagamentos.Click += new System.EventHandler(this.btnPagamentos_Click);
             // 
-            // guna2Panel8
+            // btnSair
             // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel8.Location = new System.Drawing.Point(3, 771);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel8.TabIndex = 7;
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Panel9.Location = new System.Drawing.Point(3, 877);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(115, 100);
-            this.guna2Panel9.TabIndex = 8;
+            this.btnSair.Animated = true;
+            this.btnSair.BorderRadius = 25;
+            this.btnSair.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSair.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSair.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSair.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSair.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
+            this.btnSair.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnSair.Location = new System.Drawing.Point(5, 898);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnSair.Size = new System.Drawing.Size(110, 106);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "Sair";
+            this.btnSair.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Gestao
             // 
@@ -185,6 +241,7 @@
             this.Name = "Gestao";
             this.Text = "Gestao";
             this.Load += new System.EventHandler(this.Gestao_Load);
+            this.Shown += new System.EventHandler(this.Gestao_Shown);
             this.Menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -193,17 +250,14 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm GestaoForm;
-        private Guna.UI2.WinForms.Guna2Panel Menu;
         private Guna.UI2.WinForms.Guna2CircleButton btn_menu;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel PanelPrincipal;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
+        private Guna.UI2.WinForms.Guna2Panel Menu;
+        private Guna.UI2.WinForms.Guna2Button btnDashboard;
+        private Guna.UI2.WinForms.Guna2Button btnLugares;
+        private Guna.UI2.WinForms.Guna2Button btnOcorrencias;
+        private Guna.UI2.WinForms.Guna2Button btnUsers;
+        private Guna.UI2.WinForms.Guna2Button btnSair;
+        private Guna.UI2.WinForms.Guna2Button btnPagamentos;
     }
 }

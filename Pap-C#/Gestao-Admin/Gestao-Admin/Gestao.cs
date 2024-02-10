@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace Gestao_Admin
     {
         string connectionString = "Server=localhost;Database=papgestaofinal;User ID=root;Password=mysql;Port=3306;";
         bool menu_aberto = false;
+        List<Guna2Button> botoesMenu = new List<Guna2Button>();
         public Gestao()
         {
             InitializeComponent();
@@ -22,20 +24,30 @@ namespace Gestao_Admin
         }
         private void Gestao_Load(object sender, EventArgs e)
         {
-
+            botoesMenu.Add(btnDashboard);
+            botoesMenu.Add(btnUsers);
+            botoesMenu.Add(btnOcorrencias);
+            botoesMenu.Add(btnLugares);
+            botoesMenu.Add(btnPagamentos);
+            botoesMenu.Add(btnSair);
         }
 
         private async void btn_menu_ClickAsync(object sender, EventArgs e)
         {
             if (menu_aberto)
             {
-                int novalargura = Menu.Width - 100;
+                int novalargura = Menu.Width - 110;
                 Point novaloc = new Point(btn_menu.Location.X - 100, btn_menu.Location.Y);
                 while (Menu.Width > novalargura)
                 {
                     Menu.Width -= 8;
                     btn_menu.Location = new Point(btn_menu.Location.X - 8, btn_menu.Location.Y);
                     await Task.Delay(10);
+                }
+                foreach (Guna2Button botao in botoesMenu){
+                    botao.Width = novalargura - 5;
+                    botao.Padding = new Padding(0, 0, 100, 0);
+                    botao.ImageAlign = HorizontalAlignment.Center;
                 }
                 Menu.Width = novalargura;
                 btn_menu.Location = novaloc;
@@ -44,8 +56,15 @@ namespace Gestao_Admin
             }
             else
             {
-                int novalargura = Menu.Width + 100;
-                Point novaloc = new Point(btn_menu.Location.X + 100, btn_menu.Location.Y);
+
+                int novalargura = Menu.Width + 110;
+                Point novaloc = new Point(btn_menu.Location.X + 100, btn_menu.Location.Y);                
+                foreach (Guna2Button botao in botoesMenu)
+                {
+                    botao.Width = novalargura - 5;
+                    botao.ImageAlign = HorizontalAlignment.Left;
+                    botao.Padding = new Padding(0, 0, 0, 0);
+                }
                 while (Menu.Width < novalargura)
                 {
                     Menu.Width += 8;
@@ -57,6 +76,16 @@ namespace Gestao_Admin
                 menu_aberto = true;
                 btn_menu.Text = "<";
             }
+        }
+
+        private void btnPagamentos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gestao_Shown(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -35,11 +35,11 @@
             this.PanelPrincipal = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.Menu = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
-            this.btnOcorrencias = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLugares = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPagamentos = new Guna.UI2.WinForms.Guna2Button();
             this.btnSair = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPagamentos = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLugares = new Guna.UI2.WinForms.Guna2Button();
+            this.btnOcorrencias = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,6 +102,7 @@
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // Menu
             // 
@@ -118,71 +119,28 @@
             this.Menu.Size = new System.Drawing.Size(120, 1013);
             this.Menu.TabIndex = 0;
             // 
-            // btnUsers
+            // btnSair
             // 
-            this.btnUsers.Animated = true;
-            this.btnUsers.BorderRadius = 25;
-            this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUsers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
-            this.btnUsers.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnUsers.Location = new System.Drawing.Point(5, 204);
-            this.btnUsers.Margin = new System.Windows.Forms.Padding(0);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
-            this.btnUsers.Size = new System.Drawing.Size(110, 106);
-            this.btnUsers.TabIndex = 1;
-            this.btnUsers.Text = "Users";
-            this.btnUsers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // btnOcorrencias
-            // 
-            this.btnOcorrencias.Animated = true;
-            this.btnOcorrencias.BorderRadius = 25;
-            this.btnOcorrencias.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnOcorrencias.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnOcorrencias.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnOcorrencias.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnOcorrencias.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btnOcorrencias.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnOcorrencias.ForeColor = System.Drawing.Color.White;
-            this.btnOcorrencias.Image = ((System.Drawing.Image)(resources.GetObject("btnOcorrencias.Image")));
-            this.btnOcorrencias.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnOcorrencias.Location = new System.Drawing.Point(5, 326);
-            this.btnOcorrencias.Margin = new System.Windows.Forms.Padding(0);
-            this.btnOcorrencias.Name = "btnOcorrencias";
-            this.btnOcorrencias.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
-            this.btnOcorrencias.Size = new System.Drawing.Size(110, 106);
-            this.btnOcorrencias.TabIndex = 2;
-            this.btnOcorrencias.Text = "Ocorrências";
-            this.btnOcorrencias.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // btnLugares
-            // 
-            this.btnLugares.Animated = true;
-            this.btnLugares.BorderRadius = 25;
-            this.btnLugares.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLugares.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLugares.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLugares.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLugares.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btnLugares.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnLugares.ForeColor = System.Drawing.Color.White;
-            this.btnLugares.Image = ((System.Drawing.Image)(resources.GetObject("btnLugares.Image")));
-            this.btnLugares.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnLugares.Location = new System.Drawing.Point(5, 599);
-            this.btnLugares.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLugares.Name = "btnLugares";
-            this.btnLugares.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
-            this.btnLugares.Size = new System.Drawing.Size(110, 106);
-            this.btnLugares.TabIndex = 3;
-            this.btnLugares.Text = "Lugares";
-            this.btnLugares.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSair.Animated = true;
+            this.btnSair.BorderRadius = 25;
+            this.btnSair.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSair.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSair.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSair.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSair.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
+            this.btnSair.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnSair.Location = new System.Drawing.Point(5, 898);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnSair.Size = new System.Drawing.Size(110, 106);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "Sair";
+            this.btnSair.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnPagamentos
             // 
@@ -207,27 +165,71 @@
             this.btnPagamentos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPagamentos.Click += new System.EventHandler(this.btnPagamentos_Click);
             // 
-            // btnSair
+            // btnLugares
             // 
-            this.btnSair.Animated = true;
-            this.btnSair.BorderRadius = 25;
-            this.btnSair.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSair.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSair.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSair.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSair.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
-            this.btnSair.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnSair.Location = new System.Drawing.Point(5, 898);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
-            this.btnSair.Size = new System.Drawing.Size(110, 106);
-            this.btnSair.TabIndex = 5;
-            this.btnSair.Text = "Sair";
-            this.btnSair.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLugares.Animated = true;
+            this.btnLugares.BorderRadius = 25;
+            this.btnLugares.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLugares.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLugares.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLugares.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLugares.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnLugares.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnLugares.ForeColor = System.Drawing.Color.White;
+            this.btnLugares.Image = ((System.Drawing.Image)(resources.GetObject("btnLugares.Image")));
+            this.btnLugares.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnLugares.Location = new System.Drawing.Point(5, 599);
+            this.btnLugares.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLugares.Name = "btnLugares";
+            this.btnLugares.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnLugares.Size = new System.Drawing.Size(110, 106);
+            this.btnLugares.TabIndex = 3;
+            this.btnLugares.Text = "Lugares";
+            this.btnLugares.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnOcorrencias
+            // 
+            this.btnOcorrencias.Animated = true;
+            this.btnOcorrencias.BorderRadius = 25;
+            this.btnOcorrencias.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOcorrencias.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOcorrencias.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOcorrencias.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOcorrencias.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnOcorrencias.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnOcorrencias.ForeColor = System.Drawing.Color.White;
+            this.btnOcorrencias.Image = ((System.Drawing.Image)(resources.GetObject("btnOcorrencias.Image")));
+            this.btnOcorrencias.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnOcorrencias.Location = new System.Drawing.Point(5, 326);
+            this.btnOcorrencias.Margin = new System.Windows.Forms.Padding(0);
+            this.btnOcorrencias.Name = "btnOcorrencias";
+            this.btnOcorrencias.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnOcorrencias.Size = new System.Drawing.Size(110, 106);
+            this.btnOcorrencias.TabIndex = 2;
+            this.btnOcorrencias.Text = "Ocorrências";
+            this.btnOcorrencias.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.Animated = true;
+            this.btnUsers.BorderRadius = 25;
+            this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUsers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
+            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnUsers.Location = new System.Drawing.Point(5, 204);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(0);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.btnUsers.Size = new System.Drawing.Size(110, 106);
+            this.btnUsers.TabIndex = 1;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Gestao
             // 
@@ -238,6 +240,7 @@
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gestao";
             this.Text = "Gestao";
             this.Load += new System.EventHandler(this.Gestao_Load);

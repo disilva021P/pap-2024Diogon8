@@ -1,4 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +9,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +31,7 @@ namespace Gestao_Admin
         }
 
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
             string textonif = txtnif.Text;
             int nif;
@@ -85,7 +88,10 @@ namespace Gestao_Admin
                                 this.Hide();
                                 Form formGestao = new Gestao();
                                 formGestao.ShowDialog();
-                                this.Show();
+                                if (!PopUp.Valor)
+                                {
+                                    this.Show();
+                                }
                             }
                             else
                             {
@@ -103,6 +109,7 @@ namespace Gestao_Admin
             }
 
         }
+        
     }
         
 }

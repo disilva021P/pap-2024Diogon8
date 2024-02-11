@@ -12,8 +12,8 @@ namespace Gestao_Admin
 {
     public partial class PopUp : Form
     {
-        bool clique;
-        public bool Valor
+        private static bool clique;
+        static public bool Valor
         {
             get { return clique; }
         }
@@ -24,6 +24,7 @@ namespace Gestao_Admin
             //caso 1- apenas ok the horse is here
             //caso 2- confirmar algo
             //caso 3- eliminar algo
+            //caso 4- sair
             this.mensagem.Text = mensagem;
             if (caso == 1)
             {
@@ -35,10 +36,16 @@ namespace Gestao_Admin
             {
                 btn1.Text = "Cancelar";
             }
-            else
+            else if(caso == 3)
             {
                 btn1.Text = "Cancelar";
                 btn2.Text = "Eliminar";
+                btn2.FillColor = Color.FromArgb(226, 71, 71);
+            }
+            else
+            {
+                btn1.Text = "Cancelar";
+                btn2.Text = "Sair";
                 btn2.FillColor = Color.FromArgb(226, 71, 71);
             }
         }
@@ -50,13 +57,15 @@ namespace Gestao_Admin
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            
+            clique = false;
             this.Close();
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
             clique = true;
+            this.Close();
+
         }
     }
 }

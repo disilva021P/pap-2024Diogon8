@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,13 +32,13 @@ namespace Gestao_Admin
             botoesMenu.Add(btnPagamentos);
             botoesMenu.Add(btnSair);
         }
-
+        
         private async void btn_menu_ClickAsync(object sender, EventArgs e)
         {
             if (menu_aberto)
             {
                 int novalargura = Menu.Width - 110;
-                Point novaloc = new Point(btn_menu.Location.X - 100, btn_menu.Location.Y);
+                Point novaloc = new Point(btn_menu.Location.X - 110, btn_menu.Location.Y);
                 while (Menu.Width > novalargura)
                 {
                     Menu.Width -= 8;
@@ -58,7 +59,7 @@ namespace Gestao_Admin
             {
 
                 int novalargura = Menu.Width + 110;
-                Point novaloc = new Point(btn_menu.Location.X + 100, btn_menu.Location.Y);                
+                Point novaloc = new Point(btn_menu.Location.X + 110, btn_menu.Location.Y);                
                 foreach (Guna2Button botao in botoesMenu)
                 {
                     botao.Width = novalargura - 5;
@@ -86,6 +87,21 @@ namespace Gestao_Admin
         private void Gestao_Shown(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            PopUp confirmar = new PopUp("Tem a certeza que deseja sair?", 4);
+            confirmar.ShowDialog();
+            if (PopUp.Valor)
+            {
+                Application.Exit();
+            }
         }
     }
 }

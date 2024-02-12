@@ -27,7 +27,7 @@ namespace Gestao_Admin
         public LoginAdmin()
         {
             InitializeComponent();
-            
+
         }
 
 
@@ -36,13 +36,13 @@ namespace Gestao_Admin
             string textonif = txtnif.Text;
             int nif;
             string password = txtpass.Text;
-            if(textonif == "" || password == "")
+            if (textonif == "" || password == "")
             {
                 PopUp popupContainer = new PopUp("Erro, porfavor insira todos os campos!", 1);
                 popupContainer.ShowDialog();
             }
             else {
-                if(!Int32.TryParse(textonif,out nif))
+                if (!Int32.TryParse(textonif, out nif))
                 {
                     PopUp popupContainer = new PopUp("Erro, porfavor insira um nif válido!", 1);
                     popupContainer.ShowDialog();
@@ -68,15 +68,15 @@ namespace Gestao_Admin
                             }
 
                             passwordCoded = Convert.ToBase64String(msEncrypt.ToArray());
-                        
+
                         }
                     }
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
 
-                        string sqlQuery = "SELECT COUNT(*) FROM adminlogin WHERE nif=@nif AND password=@password"; 
-                         
+                        string sqlQuery = "SELECT COUNT(*) FROM adminlogin WHERE nif=@nif AND password=@password";
+
                         using (MySqlCommand cmd = new MySqlCommand(sqlQuery, connection))
                         {
                             cmd.Parameters.AddWithValue("@nif", nif);
@@ -95,7 +95,7 @@ namespace Gestao_Admin
                             }
                             else
                             {
-                                PopUp popupContainer = new PopUp("Erro, admin não encontrado!",1);
+                                PopUp popupContainer = new PopUp("Erro, admin não encontrado!", 1);
                                 popupContainer.ShowDialog();
 
                             }
@@ -104,13 +104,17 @@ namespace Gestao_Admin
 
                     }
                 }
-                    
+
 
             }
 
         }
-        
+
+        private void LoginAdmin_Load(object sender, EventArgs e)
+        {
+            
+            
+        }
     }
-        
 }
 

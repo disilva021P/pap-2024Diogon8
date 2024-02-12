@@ -54,3 +54,5 @@ C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\bin\Debug\Bunifu.UI.
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.PopUp.resources
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.User.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Utilizadores.resources

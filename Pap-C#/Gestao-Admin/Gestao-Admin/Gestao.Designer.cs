@@ -63,7 +63,7 @@
             this.btn_menu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.btn_menu.Font = new System.Drawing.Font("Segoe UI", 30F);
             this.btn_menu.ForeColor = System.Drawing.Color.White;
-            this.btn_menu.Location = new System.Drawing.Point(87, 488);
+            this.btn_menu.Location = new System.Drawing.Point(71, 488);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_menu.Size = new System.Drawing.Size(76, 74);
@@ -78,7 +78,7 @@
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(120, 0);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(1822, 1013);
+            this.PanelPrincipal.Size = new System.Drawing.Size(1416, 1013);
             this.PanelPrincipal.TabIndex = 2;
             // 
             // btnDashboard
@@ -108,6 +108,7 @@
             // 
             this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.Menu.Controls.Add(this.btnSair);
+            this.Menu.Controls.Add(this.btn_menu);
             this.Menu.Controls.Add(this.btnPagamentos);
             this.Menu.Controls.Add(this.btnLugares);
             this.Menu.Controls.Add(this.btnOcorrencias);
@@ -230,14 +231,14 @@
             this.btnUsers.TabIndex = 1;
             this.btnUsers.Text = "Users";
             this.btnUsers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // Gestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1942, 1013);
+            this.ClientSize = new System.Drawing.Size(1536, 1013);
             this.Controls.Add(this.PanelPrincipal);
-            this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

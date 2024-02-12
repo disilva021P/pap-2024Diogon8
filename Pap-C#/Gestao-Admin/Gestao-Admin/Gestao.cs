@@ -17,6 +17,7 @@ namespace Gestao_Admin
         string connectionString = "Server=localhost;Database=papgestaofinal;User ID=root;Password=mysql;Port=3306;";
         bool menu_aberto = false;
         List<Guna2Button> botoesMenu = new List<Guna2Button>();
+        List<Utilizador> users = new List<Utilizador>();
         public Gestao()
         {
             InitializeComponent();
@@ -91,7 +92,7 @@ namespace Gestao_Admin
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -102,6 +103,28 @@ namespace Gestao_Admin
             {
                 Application.Exit();
             }
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            Utilizador  u = new Utilizador();
+            u.Nif = 123456789;
+            u.Nome = "Diogo";
+            u.Email = "email";
+            u.Sobrenome = "String";
+            u.DataNascimento = DateTime.Now;
+            u.Numero = "";
+            u.DataInscricao = DateTime.Now;
+            u.NOcorrenciasCometidas = 1;
+            u.IdLocalizacao = 1;
+            u.IdEstadoUtilizador = 1;
+            u.IdPlano = 1;
+            users.Add(u);
+            UserControl utilizadores = new Utilizadores(users);
+            utilizadores.Dock = DockStyle.Fill;
+            PanelPrincipal.Controls.Clear();
+            PanelPrincipal.Controls.Add(utilizadores);
+            PanelPrincipal.BringToFront();
         }
     }
 }

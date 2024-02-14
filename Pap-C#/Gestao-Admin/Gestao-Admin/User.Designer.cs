@@ -158,6 +158,9 @@
             this.Name = "User";
             this.Size = new System.Drawing.Size(1105, 192);
             this.Load += new System.EventHandler(this.User_Load);
+            this.Click += new System.EventHandler(this.User_Click);
+            this.Leave += new System.EventHandler(this.User_Leave);
+            this.MouseCaptureChanged += new System.EventHandler(this.User_MouseCaptureChanged);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ImageUser)).EndInit();
             this.ResumeLayout(false);

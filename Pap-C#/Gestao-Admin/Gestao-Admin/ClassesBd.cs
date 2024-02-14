@@ -114,13 +114,9 @@ public class Utilizador
     public string Numero { get; set; }
     public DateTime DataInscricao { get; set; }
     public int NOcorrenciasCometidas { get; set; }
-    public int IdLocalizacao { get; set; }
-    public int IdEstadoUtilizador { get; set; }
-    public int? IdPlano { get; set; }
-
-    public EstadoUtilizador EstadoUtilizador { get; set; }
-    public Plano Plano { get; set; }
-    public Localizacao Localizacao { get; set; }
+    public string IdLocalizacao { get; set; }
+    public string IdEstadoUtilizador { get; set; }
+    public string IdPlano { get; set; }
 }
 
 public class UtilizadorLogin

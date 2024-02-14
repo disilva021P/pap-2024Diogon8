@@ -107,19 +107,22 @@ namespace Gestao_Admin
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            Utilizador  u = new Utilizador();
-            u.Nif = 123456789;
-            u.Nome = "Diogo";
-            u.Email = "email";
-            u.Sobrenome = "String";
-            u.DataNascimento = DateTime.Now;
-            u.Numero = "";
-            u.DataInscricao = DateTime.Now;
-            u.NOcorrenciasCometidas = 1;
-            u.IdLocalizacao = 1;
-            u.IdEstadoUtilizador = 1;
-            u.IdPlano = 1;
-            users.Add(u);
+            for (int i = 0; i < 20; i++)
+            {
+                Utilizador u = new Utilizador();
+                u.Nif = 123456789;
+                u.Nome = "Diogo"+i.ToString();
+                u.Email = "email";
+                u.Sobrenome = "String";
+                u.DataNascimento = DateTime.Now;
+                u.Numero = "";
+                u.DataInscricao = DateTime.Now;
+                u.NOcorrenciasCometidas = 1;
+                u.IdLocalizacao = "fpra";
+                u.IdEstadoUtilizador = "ativo";
+                u.IdPlano = "anual";
+                users.Add(u);
+            }
             UserControl utilizadores = new Utilizadores(users);
             utilizadores.Dock = DockStyle.Fill;
             PanelPrincipal.Controls.Clear();

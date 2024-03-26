@@ -1,3 +1,4 @@
+from PesquisaSQL import *
 def le_serial():
     import serial
     porta_serial = serial.Serial('COM4', 9600)  # Substitua 'COM3' pela porta serial que está usando
@@ -16,12 +17,18 @@ def le_serial():
                 for lugar in lugares:
                     print(f'Lugar: {str(lugar[0])}')
                     print(f'Estado {str(lugar[1])}')
-
-
     except KeyboardInterrupt:
         porta_serial.close()
+    finally:
+        return lugares
 
 
 if __name__ == '__main__':
     while True:
-        le_serial()
+        lugares = le_serial()
+        lugaresbd = selecionarEstado()
+        for lugar_bd in lugaresbd:
+            for lugar_recebido in lugares:
+                if lugar_bd[0] == lugar_recebido[0] and lugar_bd[1] != lugar_recebido[1]:
+                    updateLugar(lugar_bd[0],lugar_recebido[1])
+

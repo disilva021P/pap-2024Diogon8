@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f888d2d3-4be0-4763-9318-92f1d28208ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/Models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/app/src/main/java/com/example/apppap/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/0ff24326-680d-49b9-ade0-3cd20a1993d1.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/8aad902b-fe4e-48da-8b71-ecf3888b2f44.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/dc827e04-a326-4b5b-a732-77a76ffab6e8.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/e2e911fd-d549-41bc-920e-51fcaa0d4f5c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao-Admin.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao-Admin.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Bunifu.Licensing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Bunifu.UI.WinForms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Bunifu.UI.WinForms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/pt-PT/Gestao-Admin.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/pt-PT/Gestao-Admin.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao_Admin.Gestao.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao_Admin.Gestao.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/pt-PT/Gestao-Admin.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/pt-PT/Gestao-Admin.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/Bunifu.UI.WinForms.6.3.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/lib/net452/Bunifu.Licensing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/lib/net452/Bunifu.UI.WinForms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/lib/net452/Bunifu.UI.WinForms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/ConexaoFisico-Software.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/ConexaoFisico-Software.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2cwiqkLGBU95VtbicxsxTWxQan0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f888d2d3-4be0-4763-9318-92f1d28208ff" name="Changes" comment="" />
+      <created>1709029234317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709029234317</updated>
+    </task>
+    <servers />
+  </component>
+</project>

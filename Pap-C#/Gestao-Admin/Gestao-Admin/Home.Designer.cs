@@ -30,10 +30,10 @@
         {
             this.PanelUnico = new System.Windows.Forms.FlowLayoutPanel();
             this.panelConfiguracoes = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnEditarUser = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRemoverUsesr = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdicionarUser = new Guna.UI2.WinForms.Guna2Button();
             this.txtPesquisa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnAdicionarUser = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRemoverUsesr = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEditarUser = new Guna.UI2.WinForms.Guna2Button();
             this.scrollbar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.panelConfiguracoes.SuspendLayout();
             this.SuspendLayout();
@@ -62,54 +62,6 @@
             this.panelConfiguracoes.Size = new System.Drawing.Size(1925, 105);
             this.panelConfiguracoes.TabIndex = 1;
             // 
-            // btnEditarUser
-            // 
-            this.btnEditarUser.BorderRadius = 25;
-            this.btnEditarUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditarUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditarUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditarUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditarUser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditarUser.ForeColor = System.Drawing.Color.White;
-            this.btnEditarUser.Location = new System.Drawing.Point(1494, 21);
-            this.btnEditarUser.Name = "btnEditarUser";
-            this.btnEditarUser.Size = new System.Drawing.Size(204, 60);
-            this.btnEditarUser.TabIndex = 0;
-            this.btnEditarUser.Text = "Editar";
-            this.btnEditarUser.Click += new System.EventHandler(this.btnEditarUser_Click);
-            // 
-            // btnRemoverUsesr
-            // 
-            this.btnRemoverUsesr.BorderRadius = 25;
-            this.btnRemoverUsesr.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRemoverUsesr.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRemoverUsesr.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRemoverUsesr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRemoverUsesr.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.btnRemoverUsesr.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRemoverUsesr.ForeColor = System.Drawing.Color.White;
-            this.btnRemoverUsesr.Location = new System.Drawing.Point(1256, 21);
-            this.btnRemoverUsesr.Name = "btnRemoverUsesr";
-            this.btnRemoverUsesr.Size = new System.Drawing.Size(204, 60);
-            this.btnRemoverUsesr.TabIndex = 1;
-            this.btnRemoverUsesr.Text = "Remover";
-            // 
-            // btnAdicionarUser
-            // 
-            this.btnAdicionarUser.BorderRadius = 25;
-            this.btnAdicionarUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdicionarUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdicionarUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdicionarUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdicionarUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdicionarUser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdicionarUser.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionarUser.Location = new System.Drawing.Point(1004, 21);
-            this.btnAdicionarUser.Name = "btnAdicionarUser";
-            this.btnAdicionarUser.Size = new System.Drawing.Size(204, 60);
-            this.btnAdicionarUser.TabIndex = 2;
-            this.btnAdicionarUser.Text = "Adicionar";
-            // 
             // txtPesquisa
             // 
             this.txtPesquisa.BorderRadius = 25;
@@ -131,6 +83,56 @@
             this.txtPesquisa.Size = new System.Drawing.Size(517, 60);
             this.txtPesquisa.TabIndex = 3;
             this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
+            // 
+            // btnAdicionarUser
+            // 
+            this.btnAdicionarUser.BorderRadius = 25;
+            this.btnAdicionarUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdicionarUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdicionarUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdicionarUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdicionarUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdicionarUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAdicionarUser.ForeColor = System.Drawing.Color.White;
+            this.btnAdicionarUser.Location = new System.Drawing.Point(1004, 21);
+            this.btnAdicionarUser.Name = "btnAdicionarUser";
+            this.btnAdicionarUser.Size = new System.Drawing.Size(204, 60);
+            this.btnAdicionarUser.TabIndex = 2;
+            this.btnAdicionarUser.Text = "Adicionar";
+            this.btnAdicionarUser.Click += new System.EventHandler(this.btnAdicionarUser_Click);
+            // 
+            // btnRemoverUsesr
+            // 
+            this.btnRemoverUsesr.BorderRadius = 25;
+            this.btnRemoverUsesr.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRemoverUsesr.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRemoverUsesr.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRemoverUsesr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRemoverUsesr.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            this.btnRemoverUsesr.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRemoverUsesr.ForeColor = System.Drawing.Color.White;
+            this.btnRemoverUsesr.Location = new System.Drawing.Point(1256, 21);
+            this.btnRemoverUsesr.Name = "btnRemoverUsesr";
+            this.btnRemoverUsesr.Size = new System.Drawing.Size(204, 60);
+            this.btnRemoverUsesr.TabIndex = 1;
+            this.btnRemoverUsesr.Text = "Remover";
+            this.btnRemoverUsesr.Click += new System.EventHandler(this.btnRemoverUsesr_Click);
+            // 
+            // btnEditarUser
+            // 
+            this.btnEditarUser.BorderRadius = 25;
+            this.btnEditarUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditarUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditarUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditarUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditarUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEditarUser.ForeColor = System.Drawing.Color.White;
+            this.btnEditarUser.Location = new System.Drawing.Point(1494, 21);
+            this.btnEditarUser.Name = "btnEditarUser";
+            this.btnEditarUser.Size = new System.Drawing.Size(204, 60);
+            this.btnEditarUser.TabIndex = 0;
+            this.btnEditarUser.Text = "Editar";
+            this.btnEditarUser.Click += new System.EventHandler(this.btnEditarUser_Click);
             // 
             // scrollbar1
             // 

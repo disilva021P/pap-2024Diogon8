@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,7 +33,6 @@ namespace Gestao_Admin
             foreach (Utilizador u in users)
             {
                 User user = new User(u);
-                
                 PanelUnico.Controls.Add(user);
 
             }
@@ -48,13 +50,154 @@ namespace Gestao_Admin
 
         private void txtPesquisa_TextChanged(object sender, EventArgs e)
         {
+            if (txtPesquisa.Text.Count() > 0)
+            {
+                if (int.TryParse(txtPesquisa.Text,out int resultado))
+                {
+                    List<Utilizador> usersProcurados = users.Where(u => u.Nif.ToString().StartsWith(txtPesquisa.Text, StringComparison.OrdinalIgnoreCase) ).ToList();
+                    if (PanelUnico.Controls.Count > 0)
+                    {
+                        PanelUnico.Controls.Clear();
+                    }
+                    foreach (Utilizador u in usersProcurados)
+                    {
+                        User user = new User(u);
+                        PanelUnico.Controls.Add(user);
+                    }
+                }
+                else
+                {
+                    List<Utilizador> usersProcurados = users.Where(u => u.Nome.StartsWith(txtPesquisa.Text, StringComparison.OrdinalIgnoreCase)).ToList();
+                    if (PanelUnico.Controls.Count > 0)
+                    {
+                        PanelUnico.Controls.Clear();
+                    }
+                    foreach (Utilizador u in usersProcurados)
+                    {
+                        User user = new User(u);
+                        PanelUnico.Controls.Add(user);
+                    }
+                }
+                
+            }
+            else
+            {
+                PanelUnico.Controls.Clear();
+                foreach (Utilizador u in users)
+                {
+                    User user = new User(u);
+                    PanelUnico.Controls.Add(user);
+                }
+            }
 
         }
 
         private void btnEditarUser_Click(object sender, EventArgs e)
         {
-            PopUp newa = new PopUp(User.nifSelecionado.ToString(),1);
-            newa.Show();
+            if (User.nifSelecionado == 0)
+            {
+                PopUp newa = new PopUp("Selecione alguém!", 1);
+                newa.Show();
+            }
+            else
+            {
+                Form formularioPrincipal = this.FindForm();
+
+                // Verifica se o formulário pai é do tipo desejado (Gestao) 
+                if (formularioPrincipal is Gestao gestao)
+                {
+                    // Acesse o painel no formulário principal
+                    Guna2Panel painelPrincipal = (Guna2Panel)gestao.ObterPainelPrincipal();
+                    AdicionarUser plusUser = new AdicionarUser(users,users.Where(u => u.Nif == User.nifSelecionado).ToList()[0]);
+                    
+                    painelPrincipal.Controls.Clear();
+                    painelPrincipal.Controls.Add(plusUser);
+                }
+                User.nifSelecionado = 0;
+            }
+        }
+
+        private void btnRemoverUsesr_Click(object sender, EventArgs e)
+        {
+            if(User.nifSelecionado != 0)
+            {
+                using (MySqlConnection connection = new MySqlConnection(LoginAdmin.connectionString))
+                {
+                    connection.Open();
+                    string sqls = "Select COUNT(*) FROM utilizadorlogin WHERE nif = @n AND nivel=1";
+                    MySqlCommand cmds = new MySqlCommand(sqls, connection);
+                    cmds.Parameters.AddWithValue("@n", User.nifSelecionado);
+                    if (cmds.ExecuteNonQuery() <= 0)
+                    {
+                        if (LoginAdmin.nivel != 2)
+                        {
+                            PopUp erro = new PopUp("Não pode remover um Admin sem ser o administrador principal!", 1);
+                            erro.ShowDialog();
+                        }
+                    }
+                    else
+                    {
+                        PopUp remover = new PopUp("Tem a certeza que deseja remover o utilizador com o nif: \n" + User.nifSelecionado.ToString(), 3);
+                        remover.ShowDialog();
+                        if (PopUp.Valor)
+                        {
+                            Utilizador userDelete = users.Where(u => u.Nif == User.nifSelecionado).First();
+                            users.Remove(userDelete);
+                            string sql = "DELETE FROM utilizador WHERE nif = @n";
+                            MySqlCommand cmd = new MySqlCommand(sql, connection);
+                            cmd.Parameters.AddWithValue("@n", User.nifSelecionado);
+                            if (cmd.ExecuteNonQuery() > 0)
+                            {
+                                if (PanelUnico.Controls.Count > 0)
+                                {
+                                    PanelUnico.Controls.Clear();
+                                }
+                                foreach (Utilizador u in users)
+                                {
+                                    User user = new User(u);
+
+                                    PanelUnico.Controls.Add(user);
+                                    User.nifSelecionado = 0;
+
+                                }
+                                PopUp sucesso = new PopUp("Utilizador removido com sucesso!", 1);
+                                sucesso.ShowDialog();
+                            }
+                            else
+                            {
+                                PopUp erro = new PopUp("Erro inesperado", 1);
+                                erro.ShowDialog();
+                            }
+                            connection.Close();
+                        }
+                    }
+                    }
+                }
+            else
+            {
+                PopUp erro = new PopUp("Selecione alguém!", 1);
+                erro.ShowDialog();
+            }
+        }
+                        
+            
+            
+        
+
+        private void btnAdicionarUser_Click(object sender, EventArgs e)
+        {
+            Form formularioPrincipal = this.FindForm();
+
+            // Verifica se o formulário pai é do tipo desejado (Gestao)
+            if (formularioPrincipal is Gestao gestao)
+            {
+                // Acesse o painel no formulário principal
+                Guna2Panel painelPrincipal = (Guna2Panel)gestao.ObterPainelPrincipal();
+                AdicionarUser plusUser = new AdicionarUser(users);
+                painelPrincipal.Controls.Clear();
+                painelPrincipal.Controls.Add(plusUser);
+            }
+            User.nifSelecionado = 0;
         }
     }
 }

@@ -74,12 +74,14 @@
             // 
             // PanelPrincipal
             // 
+            this.PanelPrincipal.AccessibleName = "PanelPrincipal";
             this.PanelPrincipal.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(120, 0);
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(1416, 1013);
             this.PanelPrincipal.TabIndex = 2;
+            this.PanelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelPrincipal_Paint);
             // 
             // btnDashboard
             // 
@@ -102,7 +104,6 @@
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // Menu
             // 
@@ -245,7 +246,6 @@
             this.Name = "Gestao";
             this.Text = "Gestao";
             this.Load += new System.EventHandler(this.Gestao_Load);
-            this.Shown += new System.EventHandler(this.Gestao_Shown);
             this.Menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -255,7 +255,6 @@
 
         private Guna.UI2.WinForms.Guna2BorderlessForm GestaoForm;
         private Guna.UI2.WinForms.Guna2CircleButton btn_menu;
-        private Guna.UI2.WinForms.Guna2Panel PanelPrincipal;
         private Guna.UI2.WinForms.Guna2Panel Menu;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Button btnLugares;
@@ -263,5 +262,6 @@
         private Guna.UI2.WinForms.Guna2Button btnUsers;
         private Guna.UI2.WinForms.Guna2Button btnSair;
         private Guna.UI2.WinForms.Guna2Button btnPagamentos;
+        private Guna.UI2.WinForms.Guna2Panel PanelPrincipal;
     }
 }

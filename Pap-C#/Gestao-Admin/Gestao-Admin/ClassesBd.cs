@@ -90,14 +90,25 @@ public class Pagamento
     public byte Estado { get; set; }
     public int Nif { get; set; }
 
-    // Relacionamentos
-    public Utilizador User { get; set; }
+    public string getEstado()
+    {
+        if (Estado == 0)
+        {
+            return "Por Pagar";
+        }
+        else
+        {
+            return "Pago" ;
+        }
+    }
 }
 
 public class Plano
 {
     public int IdPlano { get; set; }
     public string Nome { get; set; }
+    public string Titulo { get; set; }
+
     public double Valor { get; set; }
 }
 
@@ -109,7 +120,7 @@ public class Utilizador
     public string Morada { get; set; }
     public DateTime DataNascimento { get; set; }
     public string Email { get; set; }
-    public byte?[] Foto { get; set; }
+    public byte[] Foto { get; set; }
     public string Comentarios { get; set; }
     public string Numero { get; set; }
     public DateTime DataInscricao { get; set; }

@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Utilities;
+﻿using Google.Protobuf.WellKnownTypes;
+using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,8 +18,9 @@ namespace Gestao_Admin
     {
         Utilizador u;
         bool clicado=false;
-        public static int nifSelecionado;
+        static public int nifSelecionado;
         public static bool ativo;
+        public event EventHandler ValorAlterado;
         public User(Utilizador u)
         {
             InitializeComponent();
@@ -35,23 +37,11 @@ namespace Gestao_Admin
             txtDataInscricao.Text = u.DataInscricao.ToString();
             txtOcorrencias.Text = u.Numero.ToString();
             txtEstado.Text = u.IdEstadoUtilizador.ToString();
-            if (u.Foto != null){
-                byte[] fotoBytes = u.Foto.Select(b => b.GetValueOrDefault()).ToArray();
-                using (MemoryStream ms = new MemoryStream(fotoBytes))
-                {
-                    ImageUser.Image = Image.FromStream(ms);
-                }
-            }
-            else
+            using (MemoryStream ms = new MemoryStream(u.Foto))
             {
-                string caminhAtual = Directory.GetCurrentDirectory();
-                string caminhoAnterior = Path.GetDirectoryName(Path.GetDirectoryName(caminhAtual));
-                string pastaImagens = Path.Combine(caminhoAnterior, "arquivos");
-                string ImagemDefault = Path.Combine(pastaImagens, "ImagemDefault.jpeg");
-                ImageUser.Image = Image.FromFile(ImagemDefault);
+                Image imagem = Image.FromStream(ms);
+                ImageUser.Image = imagem;
             }
-
-
         }
 
         private void User_Click(object sender, EventArgs e)
@@ -59,14 +49,33 @@ namespace Gestao_Admin
             if (!clicado)
             {
                 this.BackColor = Color.FromArgb(208, 232, 236);
-                nifSelecionado = u.Nif;
                 clicado = true;
+                nifSelecionado = u.Nif;
+                Gestao gestaform = Application.OpenForms["Gestao"] as Gestao;
+                Pagamentos p = null;
+                Control panel = gestaform.Controls["PanelPrincipal"];
+                p = (panel as System.Windows.Forms.Panel).Controls["Pagamentos"] as Pagamentos;
+                if (p != null)
+                {
+                    p.nifVisualizar = u.Nif;
+                    p.atualiza();
+                }
+                
 
             }
             else
             {
                 this.BackColor = Color.Transparent;
                 clicado = false;
+                Gestao gestaform = Application.OpenForms["Gestao"] as Gestao;
+                Pagamentos p = null;
+                Control panel = gestaform.Controls["PanelPrincipal"];
+                p = (panel as System.Windows.Forms.Panel).Controls["Pagamentos"] as Pagamentos;
+                if (p != null)
+                {
+                    p.nifVisualizar = -1;
+                    p.atualiza();
+                }
             }
         }
 

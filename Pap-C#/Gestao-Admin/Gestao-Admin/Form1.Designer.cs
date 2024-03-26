@@ -91,7 +91,7 @@
             resources.ApplyResources(this.txtpass, "txtpass");
             this.txtpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpass.Name = "txtpass";
-            this.txtpass.PasswordChar = '\0';
+            this.txtpass.PasswordChar = '*';
             this.txtpass.PlaceholderText = "PASSWORD";
             this.txtpass.SelectedText = "";
             // 

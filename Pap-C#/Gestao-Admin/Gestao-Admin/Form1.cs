@@ -23,13 +23,12 @@ namespace Gestao_Admin
 
         private static string chave = "Encriptar0120321";
         private static string iv = "Encriptar0120321";
-        string connectionString = "Server=localhost;Database=papgestaofinal;User ID=root;Password=mysql;Port=3306;";
+        public static string connectionString = "Server=localhost;Database=papgestaofinal;User ID=root;Password=mysql;Port=3306;";
         public LoginAdmin()
         {
             InitializeComponent();
-
         }
-
+        public static int nivel = 0;
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
@@ -75,16 +74,16 @@ namespace Gestao_Admin
                     {
                         connection.Open();
 
-                        string sqlQuery = "SELECT COUNT(*) FROM adminlogin WHERE nif=@nif AND password=@password";
+                        string sqlQuery = "SELECT nivel FROM utilizadorlogin WHERE nif=@nif AND password=@password AND (nivel=1 OR nivel=2);";
 
                         using (MySqlCommand cmd = new MySqlCommand(sqlQuery, connection))
                         {
                             cmd.Parameters.AddWithValue("@nif", nif);
-                            cmd.Parameters.AddWithValue("@password", passwordCoded);
-                            int rowCount = Convert.ToInt32(cmd.ExecuteScalar());
-
-                            if (rowCount > 0)
+                            cmd.Parameters.AddWithValue("@password", password);
+                            MySqlDataReader dr = cmd.ExecuteReader();
+                            if (dr.Read())
                             {
+                                nivel = dr.GetInt32(0);
                                 this.Hide();
                                 Form formGestao = new Gestao();
                                 formGestao.ShowDialog();

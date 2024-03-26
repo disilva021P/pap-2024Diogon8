@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,6 +33,7 @@ namespace Gestao_Admin
             botoesMenu.Add(btnLugares);
             botoesMenu.Add(btnPagamentos);
             botoesMenu.Add(btnSair);
+            preencheUsers();
         }
         
         private async void btn_menu_ClickAsync(object sender, EventArgs e)
@@ -82,17 +84,12 @@ namespace Gestao_Admin
 
         private void btnPagamentos_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Gestao_Shown(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            
+            Pagamentos p = carregarPagamentos();
+            p.Dock = DockStyle.Fill;
+            PanelPrincipal.Controls.Clear();
+            PanelPrincipal.Controls.Add(p);
+            PanelPrincipal.BringToFront();
+            User.nifSelecionado = -1;
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -107,27 +104,64 @@ namespace Gestao_Admin
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 20; i++)
-            {
-                Utilizador u = new Utilizador();
-                u.Nif = 123456789;
-                u.Nome = "Diogo"+i.ToString();
-                u.Email = "email";
-                u.Sobrenome = "String";
-                u.DataNascimento = DateTime.Now;
-                u.Numero = "";
-                u.DataInscricao = DateTime.Now;
-                u.NOcorrenciasCometidas = 1;
-                u.IdLocalizacao = "fpra";
-                u.IdEstadoUtilizador = "ativo";
-                u.IdPlano = "anual";
-                users.Add(u);
-            }
-            UserControl utilizadores = new Utilizadores(users);
+            UserControl utilizadores = carregarUsers();
             utilizadores.Dock = DockStyle.Fill;
             PanelPrincipal.Controls.Clear();
             PanelPrincipal.Controls.Add(utilizadores);
             PanelPrincipal.BringToFront();
+        }
+        void preencheUsers()
+        {
+            users.Clear();
+            using (MySqlConnection connection = new MySqlConnection(LoginAdmin.connectionString))
+            {
+                connection.Open();
+                string query = "SELECT nif, nome, sobrenome, morada, dataNascimento, email, foto,comentarios,numero,dataInscricao,nOcorrenciasCometidas," +
+                    "(SELECT estado FROM estadoutilizador WHERE idEstadoUtilizador = utilizador.idEstadoUtilizador) AS estado_utilizador," +
+                    "(SELECT titulo FROM planos WHERE idPlano = utilizador.idplano) AS nome_plano," +
+                    "(SELECT localizacaoTxt FROM localizacao WHERE idlocalizacao = utilizador.idlocalizao) AS localizacao FROM    utilizador;";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Utilizador u = new Utilizador();
+                    u.Nif = dr.GetInt32(0);
+                    u.Nome = dr.GetString(1);
+                    u.Sobrenome = dr.GetString(2);
+                    u.Morada = dr.GetString(3);
+                    u.DataNascimento = dr.GetDateTime(4).Date;
+                    u.Email = dr.GetString(5);
+                    u.Foto = (byte[])dr[6];
+                    u.Comentarios = dr.GetString(7);
+                    u.Numero = dr.GetString(8);
+                    u.DataInscricao = dr.GetDateTime(9).Date;
+                    u.NOcorrenciasCometidas = dr.GetInt32(10);
+                    u.IdEstadoUtilizador = dr.GetString(11);
+                    u.IdPlano = dr.GetString(12);
+                    u.IdLocalizacao = dr.GetString(13);
+                    users.Add(u);
+                }
+                dr.Close();
+            }
+        }
+        public UserControl carregarUsers()
+        {
+            UserControl utilizadores = new Utilizadores(users);
+            return utilizadores;
+        }
+        public Pagamentos carregarPagamentos()
+        {
+            Pagamentos panlepagamento = new Pagamentos(users);
+            return panlepagamento;
+        }
+        public Panel ObterPainelPrincipal()
+        {
+            return PanelPrincipal;
+        }
+
+        private void PanelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,301 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|c:\\users\\aorus\\desktop\\pap\\pap-c#\\gestao-admin\\gestao-admin\\pagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\pagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\pagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\pagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\gestao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\gestao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\gestao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\gestao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\adicionaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\adicionaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\adicionaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\adicionaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\classesbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\classesbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\cofiguracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\cofiguracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\cofiguracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\cofiguracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\gestao-admin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7EAF871A-4FD8-4DBB-947D-E16BDB9DCF9A}|Gestao-Admin\\Gestao-Admin.csproj|solutionrelative:gestao-admin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pagamentos.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Pagamentos.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Pagamentos.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Pagamentos.cs",
+              "RelativeToolTip": "Gestao-Admin\\Pagamentos.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAJ0BAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T21:11:30.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Gestao.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Gestao.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Gestao.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Gestao.cs",
+              "RelativeToolTip": "Gestao-Admin\\Gestao.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAQwHAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-08T11:50:31.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pagamentos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Pagamentos.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Pagamentos.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Pagamentos.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\Pagamentos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T17:55:53.759Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PopUp.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\PopUp.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\PopUp.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\PopUp.cs",
+              "RelativeToolTip": "Gestao-Admin\\PopUp.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAzwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-15T08:40:04.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Cofiguracoes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Cofiguracoes.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Cofiguracoes.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Cofiguracoes.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\Cofiguracoes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T09:20:27.181Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Form1.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Form1.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Form1.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T21:15:47.886Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Form1.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Form1.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Form1.cs",
+              "RelativeToolTip": "Gestao-Admin\\Form1.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAuwFgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T21:47:58.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Cofiguracoes.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Cofiguracoes.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Cofiguracoes.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Cofiguracoes.cs",
+              "RelativeToolTip": "Gestao-Admin\\Cofiguracoes.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAH0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T09:20:28.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdicionarUser.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\AdicionarUser.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\AdicionarUser.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\AdicionarUser.cs",
+              "RelativeToolTip": "Gestao-Admin\\AdicionarUser.cs",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAAAMMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-15T11:09:35.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Home.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Home.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Home.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-11T01:14:09.719Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Home.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Home.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Home.cs",
+              "RelativeToolTip": "Gestao-Admin\\Home.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-11T14:09:47.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdicionarUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\AdicionarUser.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\AdicionarUser.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\AdicionarUser.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\AdicionarUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-15T09:45:54.221Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Gestao.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Gestao.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\Gestao.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\Gestao.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\Gestao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T01:18:50.543Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\User.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\User.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\User.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\User.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-11T14:41:09.669Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PopUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\PopUp.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\PopUp.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\PopUp.cs [Design]",
+              "RelativeToolTip": "Gestao-Admin\\PopUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-08T12:09:55.845Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\User.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\User.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\User.cs",
+              "RelativeToolTip": "Gestao-Admin\\User.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAA/wDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-11T17:33:44.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClassesBd.cs",
+              "DocumentMoniker": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\ClassesBd.cs",
+              "RelativeDocumentMoniker": "Gestao-Admin\\ClassesBd.cs",
+              "ToolTip": "C:\\Users\\Aorus\\Desktop\\Pap\\Pap-C#\\Gestao-Admin\\Gestao-Admin\\ClassesBd.cs",
+              "RelativeToolTip": "Gestao-Admin\\ClassesBd.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAywFkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-11T18:15:23.085Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

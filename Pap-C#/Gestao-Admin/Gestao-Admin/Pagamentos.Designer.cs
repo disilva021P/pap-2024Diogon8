@@ -28,38 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            Guna.Charts.WinForms.ChartFont chartFont25 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont26 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont27 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont28 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid10 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.Tick tick10 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont29 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid11 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.Tick tick11 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont30 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid12 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.PointLabel pointLabel4 = new Guna.Charts.WinForms.PointLabel();
-            Guna.Charts.WinForms.ChartFont chartFont31 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Tick tick12 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont32 = new Guna.Charts.WinForms.ChartFont();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            Guna.Charts.WinForms.ChartFont chartFont17 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont18 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont19 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont20 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid7 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick7 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont21 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid8 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick8 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont22 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid9 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.PointLabel pointLabel3 = new Guna.Charts.WinForms.PointLabel();
+            Guna.Charts.WinForms.ChartFont chartFont23 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Tick tick9 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont24 = new Guna.Charts.WinForms.ChartFont();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelConfiguracoes = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnLimparDefinicoes = new Guna.UI2.WinForms.Guna2Button();
             this.cbAno = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbMes = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnAdicionarUser = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRemoverUsesr = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEditarUser = new Guna.UI2.WinForms.Guna2Button();
             this.txtPesquisa = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelGlobal = new Guna.UI2.WinForms.Guna2Panel();
-            this.scrollbar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblMedia = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelTotal = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelTotal = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelUsers = new Guna.UI2.WinForms.Guna2Panel();
+            this.scrollbar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkE = new System.Windows.Forms.CheckBox();
             this.checkN = new System.Windows.Forms.CheckBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -72,9 +79,13 @@
             this.ValorPagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nif = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.LimparConfig = new Guna.UI2.WinForms.Guna2Button();
             this.panelConfiguracoes.SuspendLayout();
             this.panelGlobal.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.panelTotal.SuspendLayout();
             this.panelUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagamentos)).BeginInit();
@@ -84,36 +95,15 @@
             // 
             this.panelConfiguracoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.panelConfiguracoes.BorderRadius = 10;
-            this.panelConfiguracoes.Controls.Add(this.btnLimparDefinicoes);
+            this.panelConfiguracoes.Controls.Add(this.LimparConfig);
             this.panelConfiguracoes.Controls.Add(this.cbAno);
             this.panelConfiguracoes.Controls.Add(this.cbMes);
-            this.panelConfiguracoes.Controls.Add(this.btnAdicionarUser);
-            this.panelConfiguracoes.Controls.Add(this.btnRemoverUsesr);
-            this.panelConfiguracoes.Controls.Add(this.btnEditarUser);
             this.panelConfiguracoes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelConfiguracoes.Location = new System.Drawing.Point(0, 0);
             this.panelConfiguracoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelConfiguracoes.Name = "panelConfiguracoes";
             this.panelConfiguracoes.Size = new System.Drawing.Size(1925, 105);
             this.panelConfiguracoes.TabIndex = 3;
-            // 
-            // btnLimparDefinicoes
-            // 
-            this.btnLimparDefinicoes.BorderRadius = 25;
-            this.btnLimparDefinicoes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLimparDefinicoes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLimparDefinicoes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLimparDefinicoes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLimparDefinicoes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnLimparDefinicoes.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLimparDefinicoes.ForeColor = System.Drawing.Color.White;
-            this.btnLimparDefinicoes.Location = new System.Drawing.Point(677, 21);
-            this.btnLimparDefinicoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLimparDefinicoes.Name = "btnLimparDefinicoes";
-            this.btnLimparDefinicoes.Size = new System.Drawing.Size(204, 60);
-            this.btnLimparDefinicoes.TabIndex = 3;
-            this.btnLimparDefinicoes.Text = "Limpar";
-            this.btnLimparDefinicoes.Click += new System.EventHandler(this.btnLimparDefinicoes_Click);
             // 
             // cbAno
             // 
@@ -130,7 +120,7 @@
             "2023",
             "2024",
             "2025"});
-            this.cbAno.Location = new System.Drawing.Point(476, 34);
+            this.cbAno.Location = new System.Drawing.Point(204, 34);
             this.cbAno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbAno.Name = "cbAno";
             this.cbAno.Size = new System.Drawing.Size(195, 36);
@@ -161,62 +151,12 @@
             "Outubro",
             "Novembro",
             "Dezembro"});
-            this.cbMes.Location = new System.Drawing.Point(275, 34);
+            this.cbMes.Location = new System.Drawing.Point(3, 34);
             this.cbMes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMes.Name = "cbMes";
             this.cbMes.Size = new System.Drawing.Size(195, 36);
             this.cbMes.TabIndex = 0;
             this.cbMes.SelectedIndexChanged += new System.EventHandler(this.cbMes_SelectedIndexChanged);
-            // 
-            // btnAdicionarUser
-            // 
-            this.btnAdicionarUser.BorderRadius = 25;
-            this.btnAdicionarUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdicionarUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdicionarUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdicionarUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdicionarUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdicionarUser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdicionarUser.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionarUser.Location = new System.Drawing.Point(1004, 21);
-            this.btnAdicionarUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAdicionarUser.Name = "btnAdicionarUser";
-            this.btnAdicionarUser.Size = new System.Drawing.Size(204, 60);
-            this.btnAdicionarUser.TabIndex = 2;
-            this.btnAdicionarUser.Text = "Adicionar";
-            // 
-            // btnRemoverUsesr
-            // 
-            this.btnRemoverUsesr.BorderRadius = 25;
-            this.btnRemoverUsesr.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRemoverUsesr.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRemoverUsesr.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRemoverUsesr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRemoverUsesr.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.btnRemoverUsesr.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRemoverUsesr.ForeColor = System.Drawing.Color.White;
-            this.btnRemoverUsesr.Location = new System.Drawing.Point(1256, 21);
-            this.btnRemoverUsesr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRemoverUsesr.Name = "btnRemoverUsesr";
-            this.btnRemoverUsesr.Size = new System.Drawing.Size(204, 60);
-            this.btnRemoverUsesr.TabIndex = 1;
-            this.btnRemoverUsesr.Text = "Remover";
-            // 
-            // btnEditarUser
-            // 
-            this.btnEditarUser.BorderRadius = 25;
-            this.btnEditarUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditarUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditarUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditarUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditarUser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditarUser.ForeColor = System.Drawing.Color.White;
-            this.btnEditarUser.Location = new System.Drawing.Point(1493, 21);
-            this.btnEditarUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEditarUser.Name = "btnEditarUser";
-            this.btnEditarUser.Size = new System.Drawing.Size(204, 60);
-            this.btnEditarUser.TabIndex = 0;
-            this.btnEditarUser.Text = "Editar";
             // 
             // txtPesquisa
             // 
@@ -242,6 +182,10 @@
             // 
             // panelGlobal
             // 
+            this.panelGlobal.Controls.Add(this.guna2Panel4);
+            this.panelGlobal.Controls.Add(this.guna2Panel2);
+            this.panelGlobal.Controls.Add(this.guna2Panel1);
+            this.panelGlobal.Controls.Add(this.panelTotal);
             this.panelGlobal.Controls.Add(this.panelUsers);
             this.panelGlobal.Controls.Add(this.checkE);
             this.panelGlobal.Controls.Add(this.txtPesquisa);
@@ -255,23 +199,121 @@
             this.panelGlobal.Name = "panelGlobal";
             this.panelGlobal.Size = new System.Drawing.Size(1925, 911);
             this.panelGlobal.TabIndex = 4;
+            this.panelGlobal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGlobal_Paint_1);
             // 
-            // scrollbar1
+            // guna2Panel4
             // 
-            this.scrollbar1.AutoRoundedCorners = true;
-            this.scrollbar1.BindingContainer = this.flowLayoutPanel1;
-            this.scrollbar1.BorderRadius = 9;
-            this.scrollbar1.InUpdate = false;
-            this.scrollbar1.LargeChange = 409;
-            this.scrollbar1.Location = new System.Drawing.Point(1163, 0);
-            this.scrollbar1.Maximum = 414;
-            this.scrollbar1.Name = "scrollbar1";
-            this.scrollbar1.ScrollbarSize = 21;
-            this.scrollbar1.Size = new System.Drawing.Size(21, 412);
-            this.scrollbar1.SmallChange = 5;
-            this.scrollbar1.TabIndex = 1;
-            this.scrollbar1.ThumbSize = 40F;
-            this.scrollbar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
+            this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel4.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel4.BorderRadius = 50;
+            this.guna2Panel4.BorderThickness = 1;
+            this.guna2Panel4.Controls.Add(this.label5);
+            this.guna2Panel4.FillColor = System.Drawing.Color.White;
+            this.guna2Panel4.Location = new System.Drawing.Point(369, 682);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(282, 201);
+            this.guna2Panel4.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(84, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 48);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Total";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel2.BorderRadius = 50;
+            this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Controls.Add(this.label3);
+            this.guna2Panel2.FillColor = System.Drawing.Color.White;
+            this.guna2Panel2.Location = new System.Drawing.Point(18, 682);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(282, 201);
+            this.guna2Panel2.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(84, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 48);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel1.BorderRadius = 50;
+            this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Controls.Add(this.lblMedia);
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.FillColor = System.Drawing.Color.White;
+            this.guna2Panel1.Location = new System.Drawing.Point(369, 405);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(282, 201);
+            this.guna2Panel1.TabIndex = 7;
+            // 
+            // lblMedia
+            // 
+            this.lblMedia.AutoSize = true;
+            this.lblMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedia.Location = new System.Drawing.Point(104, 81);
+            this.lblMedia.Name = "lblMedia";
+            this.lblMedia.Size = new System.Drawing.Size(74, 39);
+            this.lblMedia.TabIndex = 2;
+            this.lblMedia.Text = "10€";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(74, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(134, 48);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Media";
+            // 
+            // panelTotal
+            // 
+            this.panelTotal.BackColor = System.Drawing.Color.Transparent;
+            this.panelTotal.BorderColor = System.Drawing.Color.Black;
+            this.panelTotal.BorderRadius = 50;
+            this.panelTotal.BorderThickness = 1;
+            this.panelTotal.Controls.Add(this.labelTotal);
+            this.panelTotal.Controls.Add(this.label1);
+            this.panelTotal.FillColor = System.Drawing.Color.White;
+            this.panelTotal.Location = new System.Drawing.Point(18, 405);
+            this.panelTotal.Name = "panelTotal";
+            this.panelTotal.Size = new System.Drawing.Size(282, 201);
+            this.panelTotal.TabIndex = 6;
+            // 
+            // labelTotal
+            // 
+            this.labelTotal.AutoSize = true;
+            this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotal.Location = new System.Drawing.Point(104, 81);
+            this.labelTotal.Name = "labelTotal";
+            this.labelTotal.Size = new System.Drawing.Size(74, 39);
+            this.labelTotal.TabIndex = 1;
+            this.labelTotal.Text = "10€";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(84, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 48);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Total";
             // 
             // panelUsers
             // 
@@ -280,9 +322,35 @@
             this.panelUsers.Controls.Add(this.flowLayoutPanel1);
             this.panelUsers.Location = new System.Drawing.Point(667, 474);
             this.panelUsers.Name = "panelUsers";
-            this.panelUsers.Size = new System.Drawing.Size(1205, 409);
+            this.panelUsers.Size = new System.Drawing.Size(1142, 409);
             this.panelUsers.TabIndex = 5;
             this.panelUsers.Click += new System.EventHandler(this.panelUsers_Click);
+            // 
+            // scrollbar1
+            // 
+            this.scrollbar1.AutoRoundedCorners = true;
+            this.scrollbar1.BindingContainer = this.flowLayoutPanel1;
+            this.scrollbar1.BorderRadius = 9;
+            this.scrollbar1.InUpdate = false;
+            this.scrollbar1.LargeChange = 10;
+            this.scrollbar1.Location = new System.Drawing.Point(1121, 0);
+            this.scrollbar1.Name = "scrollbar1";
+            this.scrollbar1.ScrollbarSize = 21;
+            this.scrollbar1.Size = new System.Drawing.Size(21, 409);
+            this.scrollbar1.TabIndex = 1;
+            this.scrollbar1.ThumbSize = 1F;
+            this.scrollbar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
+            this.scrollbar1.Visible = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1142, 409);
+            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // checkE
             // 
@@ -310,17 +378,17 @@
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(1115, 37);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(345, 318);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "Pagamentos";
@@ -329,38 +397,38 @@
             // 
             this.gunaChart1.Datasets.AddRange(new Guna.Charts.Interfaces.IGunaDataset[] {
             this.gunaBarDataset});
-            chartFont25.FontName = "Arial";
-            this.gunaChart1.Legend.LabelFont = chartFont25;
+            chartFont17.FontName = "Arial";
+            this.gunaChart1.Legend.LabelFont = chartFont17;
             this.gunaChart1.Location = new System.Drawing.Point(667, 37);
             this.gunaChart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaChart1.Name = "gunaChart1";
             this.gunaChart1.Size = new System.Drawing.Size(419, 318);
             this.gunaChart1.TabIndex = 1;
-            chartFont26.FontName = "Arial";
-            chartFont26.Size = 12;
-            chartFont26.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.gunaChart1.Title.Font = chartFont26;
-            chartFont27.FontName = "Arial";
-            this.gunaChart1.Tooltips.BodyFont = chartFont27;
-            chartFont28.FontName = "Arial";
-            chartFont28.Size = 9;
-            chartFont28.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.gunaChart1.Tooltips.TitleFont = chartFont28;
-            this.gunaChart1.XAxes.GridLines = grid10;
-            chartFont29.FontName = "Arial";
-            tick10.Font = chartFont29;
-            this.gunaChart1.XAxes.Ticks = tick10;
-            this.gunaChart1.YAxes.GridLines = grid11;
-            chartFont30.FontName = "Arial";
-            tick11.Font = chartFont30;
-            this.gunaChart1.YAxes.Ticks = tick11;
-            this.gunaChart1.ZAxes.GridLines = grid12;
-            chartFont31.FontName = "Arial";
-            pointLabel4.Font = chartFont31;
-            this.gunaChart1.ZAxes.PointLabels = pointLabel4;
-            chartFont32.FontName = "Arial";
-            tick12.Font = chartFont32;
-            this.gunaChart1.ZAxes.Ticks = tick12;
+            chartFont18.FontName = "Arial";
+            chartFont18.Size = 12;
+            chartFont18.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.gunaChart1.Title.Font = chartFont18;
+            chartFont19.FontName = "Arial";
+            this.gunaChart1.Tooltips.BodyFont = chartFont19;
+            chartFont20.FontName = "Arial";
+            chartFont20.Size = 9;
+            chartFont20.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.gunaChart1.Tooltips.TitleFont = chartFont20;
+            this.gunaChart1.XAxes.GridLines = grid7;
+            chartFont21.FontName = "Arial";
+            tick7.Font = chartFont21;
+            this.gunaChart1.XAxes.Ticks = tick7;
+            this.gunaChart1.YAxes.GridLines = grid8;
+            chartFont22.FontName = "Arial";
+            tick8.Font = chartFont22;
+            this.gunaChart1.YAxes.Ticks = tick8;
+            this.gunaChart1.ZAxes.GridLines = grid9;
+            chartFont23.FontName = "Arial";
+            pointLabel3.Font = chartFont23;
+            this.gunaChart1.ZAxes.PointLabels = pointLabel3;
+            chartFont24.FontName = "Arial";
+            tick9.Font = chartFont24;
+            this.gunaChart1.ZAxes.Ticks = tick9;
             // 
             // gunaBarDataset
             // 
@@ -370,19 +438,18 @@
             // dgvPagamentos
             // 
             this.dgvPagamentos.AllowUserToAddRows = false;
-            this.dgvPagamentos.AllowUserToDeleteRows = false;
             this.dgvPagamentos.AllowUserToResizeColumns = false;
             this.dgvPagamentos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dgvPagamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPagamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgvPagamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPagamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvPagamentos.ColumnHeadersHeight = 34;
             this.dgvPagamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvPagamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -392,17 +459,18 @@
             this.ValorPagamento,
             this.estado,
             this.Nif});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPagamentos.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPagamentos.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvPagamentos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPagamentos.Location = new System.Drawing.Point(3, 37);
             this.dgvPagamentos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvPagamentos.MultiSelect = false;
             this.dgvPagamentos.Name = "dgvPagamentos";
             this.dgvPagamentos.RowHeadersVisible = false;
             this.dgvPagamentos.RowHeadersWidth = 51;
@@ -430,12 +498,17 @@
             this.dgvPagamentos.ThemeStyle.RowsStyle.Height = 24;
             this.dgvPagamentos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPagamentos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvPagamentos.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvPagamentos_CellBeginEdit);
+            this.dgvPagamentos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPagamentos_CellValueChanged);
+            this.dgvPagamentos.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvPagamentos_RowsRemoved);
+            this.dgvPagamentos.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgvPagamentos_UserDeletingRow);
             // 
             // IdPagamento
             // 
             this.IdPagamento.HeaderText = "Id";
             this.IdPagamento.MinimumWidth = 6;
             this.IdPagamento.Name = "IdPagamento";
+            this.IdPagamento.ReadOnly = true;
             // 
             // TituloPagamento
             // 
@@ -466,15 +539,25 @@
             this.Nif.HeaderText = "Nif";
             this.Nif.MinimumWidth = 6;
             this.Nif.Name = "Nif";
+            this.Nif.ReadOnly = true;
             // 
-            // flowLayoutPanel1
+            // LimparConfig
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1184, 412);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.LimparConfig.BorderRadius = 25;
+            this.LimparConfig.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LimparConfig.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LimparConfig.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LimparConfig.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LimparConfig.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.LimparConfig.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.LimparConfig.ForeColor = System.Drawing.Color.White;
+            this.LimparConfig.Location = new System.Drawing.Point(405, 21);
+            this.LimparConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LimparConfig.Name = "LimparConfig";
+            this.LimparConfig.Size = new System.Drawing.Size(204, 60);
+            this.LimparConfig.TabIndex = 3;
+            this.LimparConfig.Text = "Limpar";
+            this.LimparConfig.Click += new System.EventHandler(this.btnLimparDefinicoes_Click);
             // 
             // Pagamentos
             // 
@@ -489,6 +572,14 @@
             this.panelConfiguracoes.ResumeLayout(false);
             this.panelGlobal.ResumeLayout(false);
             this.panelGlobal.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel4.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.panelTotal.ResumeLayout(false);
+            this.panelTotal.PerformLayout();
             this.panelUsers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagamentos)).EndInit();
@@ -500,9 +591,6 @@
 
         private Guna.UI2.WinForms.Guna2Panel panelConfiguracoes;
         private Guna.UI2.WinForms.Guna2TextBox txtPesquisa;
-        private Guna.UI2.WinForms.Guna2Button btnAdicionarUser;
-        private Guna.UI2.WinForms.Guna2Button btnRemoverUsesr;
-        private Guna.UI2.WinForms.Guna2Button btnEditarUser;
         private Guna.UI2.WinForms.Guna2Panel panelGlobal;
         private Guna.UI2.WinForms.Guna2ComboBox cbAno;
         private Guna.UI2.WinForms.Guna2ComboBox cbMes;
@@ -510,17 +598,27 @@
         private Guna.Charts.WinForms.GunaChart gunaChart1;
         private Guna.Charts.WinForms.GunaBarDataset gunaBarDataset;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.CheckBox checkE;
+        private System.Windows.Forms.CheckBox checkN;
+        private Guna.UI2.WinForms.Guna2Panel panelUsers;
+        private Guna.UI2.WinForms.Guna2VScrollBar scrollbar1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdPagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn TituloPagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn datapagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ValorPagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nif;
-        private System.Windows.Forms.CheckBox checkE;
-        private System.Windows.Forms.CheckBox checkN;
-        private Guna.UI2.WinForms.Guna2Button btnLimparDefinicoes;
-        private Guna.UI2.WinForms.Guna2Panel panelUsers;
-        private Guna.UI2.WinForms.Guna2VScrollBar scrollbar1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2Panel panelTotal;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelTotal;
+        private System.Windows.Forms.Label lblMedia;
+        private Guna.UI2.WinForms.Guna2Button LimparConfig;
     }
 }

@@ -30,7 +30,7 @@ namespace Gestao_Admin
         }
         public static int nivel = 0;
 
-        private async void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string textonif = txtnif.Text;
             int nif;
@@ -113,6 +113,14 @@ namespace Gestao_Admin
         {
             
             
+        }
+
+        private void txtpass_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
         }
     }
 }

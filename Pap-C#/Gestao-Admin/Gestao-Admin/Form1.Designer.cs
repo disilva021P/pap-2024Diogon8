@@ -94,6 +94,7 @@
             this.txtpass.PasswordChar = '*';
             this.txtpass.PlaceholderText = "PASSWORD";
             this.txtpass.SelectedText = "";
+            this.txtpass.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtpass_KeyUp);
             // 
             // lbl_nome
             // 
@@ -131,7 +132,6 @@
             this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginAdmin";
-            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.LoginAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

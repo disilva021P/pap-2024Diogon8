@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Diagnostics.Eventing.Reader;
 using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Linq;
@@ -30,6 +32,7 @@ namespace Gestao_Admin
         int ano = -1;
         bool n = false;
         List<Utilizador> users;
+        bool edita = false;
         public Pagamentos(List<Utilizador> users)
         {
             InitializeComponent();
@@ -50,15 +53,8 @@ namespace Gestao_Admin
                 gunaBarDataset.FillColors.Add(Color.MediumSlateBlue);
                 gunaBarDataset.FillColors.Add(Color.MediumPurple);
                 gunaBarDataset.YFormat = "C";
-                PreencheBarDataset(mes, ano, nifVisualizar);
-                PreencherPieDataSet(mes,ano,nifVisualizar,n);
-                Preencher_dgv(mes,ano,nifVisualizar);
             }
             flowLayoutPanel1.Controls.Clear();
-            if (flowLayoutPanel1.Controls.Count > 0)
-            {
-                flowLayoutPanel1.Controls.Clear();
-            }
             foreach (Utilizador u in users)
             {
                 User user = new User(u);
@@ -66,6 +62,7 @@ namespace Gestao_Admin
             }
             scrollbar1.Minimum = panelUsers.VerticalScroll.Minimum;
             scrollbar1.Maximum = panelUsers.VerticalScroll.Maximum;
+            atualiza();
         }
         /// <summary>
         /// Esta função serve para carregar o data set e vai depender das definições escolhidas pelo admin
@@ -78,14 +75,24 @@ namespace Gestao_Admin
             {
                 conn.Open();
                 string[] meses = { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" };
-                string query = "SELECT SUM(valorPagamento) FROM pagamento WHERE MONTH(dataPagamentoRecebido) = @mes;";
+                string query = "SELECT SUM(valorPagamento) FROM pagamento WHERE MONTH(dataPagamentoRecebido) = @mes ";
+                if (ano != -1)
+                    query += " AND YEAR(dataPagamentoRecebido) = @ano";
+                if (user != -1)
+                    query += " AND nif = @nif";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
+                
+
                 int index = 1;
                 if (mes == -1)
                 {
                     foreach (string label in meses)
                     {
                         cmd.Parameters.AddWithValue("@mes", index);
+                        if (ano != -1)
+                            cmd.Parameters.AddWithValue("@ano", ano);
+                        if (user != -1)
+                            cmd.Parameters.AddWithValue("@nif", user);
                         MySqlDataReader dr = cmd.ExecuteReader();
                         dr.Read();
                         double valor;
@@ -112,6 +119,10 @@ namespace Gestao_Admin
                 else
                 {
                     cmd.Parameters.AddWithValue("@mes", mes);
+                    if (ano != -1)
+                        cmd.Parameters.AddWithValue("@ano", ano);
+                    if (user != -1)
+                        cmd.Parameters.AddWithValue("@nif", user);
                     MySqlDataReader dr = cmd.ExecuteReader();
                     dr.Read();
                     double valor;
@@ -304,7 +315,7 @@ namespace Gestao_Admin
                 while (dr.Read())
                 {
                     pagamento.Estado = dr.GetByte(4);
-                    dgvPagamentos.Rows.Add(dr.GetInt32(0), dr.GetString(1), dr.GetDateTime(2).Date.ToString(), dr.GetDouble(3), pagamento.getEstado(), dr.GetInt32(5));
+                    dgvPagamentos.Rows.Add(dr.GetInt32(0), dr.GetString(1), dr.GetDateTime(2).Date.Date.ToString("dd/MM/yyyy"), dr.GetDouble(3), pagamento.getEstado(), dr.GetInt32(5));
                 }
                 dr.Close();
                 conn.Close();
@@ -352,7 +363,75 @@ namespace Gestao_Admin
             }
             atualiza();
         }
-
+        void preencherLabels(int mes, int ano, int user)
+        {
+            #region total
+            using (MySqlConnection conn = new MySqlConnection(LoginAdmin.connectionString))
+            {
+                conn.Open();
+                string query = "SELECT SUM(valorPagamento) FROM pagamento Where 1=1";
+                //como eram ifs rapidos usei a identação em vez dos {}
+                if (ano != -1)
+                    query += " AND YEAR(dataPagamentoRecebido) = @ano";
+                if (mes != -1)
+                    query += " AND MONTH(dataPagamentoRecebido) = @mes";
+                if (nifVisualizar != -1)
+                    query += " AND nif = @nif";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                if (ano != -1)
+                    cmd.Parameters.AddWithValue("@ano", ano);
+                if (mes != -1)
+                    cmd.Parameters.AddWithValue("@mes", mes);
+                if (nifVisualizar != -1)
+                    cmd.Parameters.AddWithValue("@nif", nifVisualizar);
+                object dr = cmd.ExecuteScalar();
+                if (!dr.ToString().Equals(""))
+                {
+                    double valor = Convert.ToDouble(dr);
+                    labelTotal.Text = valor.ToString("N2") + "€";
+                }
+                else
+                {
+                    labelTotal.Text = "0€";
+                }
+                conn.Close();
+            }
+            #endregion
+            #region media
+            using(MySqlConnection conn = new MySqlConnection(LoginAdmin.connectionString))
+            {
+                conn.Open();
+                if(mes == -1)
+                {
+                    string query = "SELECT SUM(valorPagamento) FROM pagamento WHERE 1=1";
+                    if (ano != -1)
+                        query += " AND YEAR(dataPagamentoRecebido) = @ano";
+                    if (user != -1)
+                        query += " AND nif = @nif";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    if (ano != -1)
+                        cmd.Parameters.AddWithValue("@ano", ano);
+                    if (nifVisualizar != -1)
+                        cmd.Parameters.AddWithValue("@nif", user);
+                    object dr = cmd.ExecuteScalar();
+                    if (!dr.ToString().Equals(""))
+                    {
+                        double valor = Convert.ToDouble(dr);
+                        lblMedia.Text = (valor/12).ToString("N2") + "€";
+                    }
+                    else
+                    {
+                        lblMedia.Text = "0€";
+                    }
+                }
+                else
+                {
+                    lblMedia.Text= labelTotal.Text;
+                }
+                conn.Close();
+            }
+            #endregion
+        }
         private void cbAno_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbAno.SelectedIndex == -1 || cbAno.SelectedIndex == 0)
@@ -367,9 +446,12 @@ namespace Gestao_Admin
         }
         public void atualiza()
         {
+            edita = false;
             PreencheBarDataset(mes, ano, nifVisualizar);
             PreencherPieDataSet(mes, ano, nifVisualizar, n);
             Preencher_dgv(mes, ano, nifVisualizar);
+            preencherLabels(mes, ano, nifVisualizar);
+            
         }
 
         private void panelGlobal_Paint(object sender, PaintEventArgs e)
@@ -424,6 +506,138 @@ namespace Gestao_Admin
         {
             
         }
-        
+
+        private void dgvPagamentos_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            
+            
+        }
+
+        private void dgvPagamentos_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            DataGridViewRow linhaRemovida = e.Row;
+            PopUp remover = new PopUp("Tem a certeza que deseja remover este pagamento no valor de "+ linhaRemovida.Cells[3].Value.ToString()+ "€ do utilizador com o nif: " + linhaRemovida.Cells[5].Value + "?", 3);
+            remover.ShowDialog();
+            if (PopUp.Valor)
+            {
+                using (MySqlConnection conn = new MySqlConnection(LoginAdmin.connectionString))
+                {
+                    conn.Open();
+                    string sql = "DELETE FROM pagamento WHERE idPagamento=@id;";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", linhaRemovida.Cells[0].Value);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                atualiza();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void dgvPagamentos_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (edita)
+            {
+                DataGridViewRow linhaEditada = dgvPagamentos.Rows[e.RowIndex];
+                if(linhaEditada != null)
+                {
+                    string sql = "UPDATE pagamento SET ";
+                    dynamic valor;
+                    valor = null;
+                    switch (e.ColumnIndex)
+                    {
+                        case 1:
+                            sql += "titulo = @valor";
+                            valor = linhaEditada.Cells[1].Value.ToString();
+                            break;
+                        case 2:
+                            if (DateTime.TryParse(linhaEditada.Cells[2].Value.ToString(), out DateTime retoma))
+                            {
+                                sql += "dataPagamentoRecebido = @valor";
+                                valor = retoma;
+                                valor.ToString("YYYY-MM-DD");
+                            }
+                            else
+                            {
+                                PopUp erro = new PopUp("Erro, valor inválido, deve ser uma data válida!", 1);
+                                erro.ShowDialog();
+                            }
+
+                            break;
+                        case 3:
+                            if (Int32.TryParse(linhaEditada.Cells[3].Value.ToString(), out int retomaInt)){
+                                valor = retomaInt;
+                                sql += "valorPagamento = @valor";
+                            }
+                            else
+                            {
+                                PopUp erro = new PopUp("Erro, valor inválido, deve ser um valor real!", 1);
+                                erro.ShowDialog();
+                            }
+                            break;
+                        case 4:
+                            if(linhaEditada.Cells[2].Value.ToString() == "Pago" || linhaEditada.Cells[2].Value.ToString() == "1")
+                            {
+                                sql += "estado = @valor";
+                                valor = 1;
+                            }
+                            if(linhaEditada.Cells[2].Value.ToString() == "Por Pagar" || linhaEditada.Cells[2].Value.ToString() == "0")
+                            {
+                                sql += "estado = @valor";
+                                valor = 0;
+                            }
+                            if(valor == null)
+                            {
+                                PopUp erro = new PopUp("Erro, valor inválido, deve inserir um dos seguintes valores:\n Pago (ou 1) \n Por Pagar(ou 0)", 1);
+                                erro.ShowDialog();
+                            }
+                            break;
+                    }
+                    sql += " Where idPagamento=@id";
+                    using(MySqlConnection con = new MySqlConnection(LoginAdmin.connectionString))
+                    {
+                        con.Open();
+                        MySqlCommand cmd = new MySqlCommand(sql,con);
+                        if(valor != null)
+                        {
+                            cmd.Parameters.AddWithValue("@valor", valor);
+                            cmd.Parameters.AddWithValue("@id",(int)linhaEditada.Cells[0].Value);
+                            cmd.ExecuteNonQuery();
+
+                        }
+                        else
+                        {
+                            linhaEditada.Cells[e.ColumnIndex].Value = valorAnterior;
+                        }
+                        con.Close();
+
+                    }
+                }
+                atualiza();
+            }
+            else
+            {
+                
+            }
+        }
+        dynamic valorAnterior;
+        private void dgvPagamentos_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            valorAnterior = dgvPagamentos.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+            edita = true;
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelGlobal_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

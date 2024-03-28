@@ -90,6 +90,7 @@
             this.txtDataNascimento.Size = new System.Drawing.Size(134, 20);
             this.txtDataNascimento.TabIndex = 3;
             this.txtDataNascimento.Text = "DataNascimento";
+            this.txtDataNascimento.Click += new System.EventHandler(this.txtDataNascimento_Click);
             // 
             // txtNif
             // 

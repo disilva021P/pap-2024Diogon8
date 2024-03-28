@@ -15,7 +15,6 @@ namespace Gestao_Admin
 {
     public partial class Gestao : Form
     {
-        string connectionString = "Server=localhost;Database=papgestaofinal;User ID=root;Password=mysql;Port=3306;";
         bool menu_aberto = false;
         List<Guna2Button> botoesMenu = new List<Guna2Button>();
         List<Utilizador> users = new List<Utilizador>();
@@ -162,6 +161,12 @@ namespace Gestao_Admin
         private void PanelPrincipal_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnLugares_Click(object sender, EventArgs e)
+        {
+            Form estacionamento = new Estacionamento(2);
+            estacionamento.ShowDialog();
         }
     }
 }

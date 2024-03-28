@@ -20,7 +20,6 @@ namespace Gestao_Admin
         bool clicado=false;
         static public int nifSelecionado;
         public static bool ativo;
-        public event EventHandler ValorAlterado;
         public User(Utilizador u)
         {
             InitializeComponent();
@@ -33,8 +32,8 @@ namespace Gestao_Admin
             txtEmail.Text = u.Email.ToString();
             txtNome.Text = u.Nome.ToString() + " " + u.Sobrenome.ToString();
             txtNumero.Text = u.Numero.ToString();
-            txtDataNascimento.Text = u.DataNascimento.ToString();
-            txtDataInscricao.Text = u.DataInscricao.ToString();
+            txtDataNascimento.Text = u.DataNascimento.Date.ToString("dd/MM/yyyy");
+            txtDataInscricao.Text = u.DataInscricao.Date.ToString("dd/MM/yyyy");
             txtOcorrencias.Text = u.Numero.ToString();
             txtEstado.Text = u.IdEstadoUtilizador.ToString();
             using (MemoryStream ms = new MemoryStream(u.Foto))
@@ -88,6 +87,11 @@ namespace Gestao_Admin
         {
             this.BackColor = Color.Transparent;
             clicado = false;
+        }
+
+        private void txtDataNascimento_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

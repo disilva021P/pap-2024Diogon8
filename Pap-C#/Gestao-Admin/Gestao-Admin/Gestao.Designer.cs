@@ -188,6 +188,7 @@
             this.btnLugares.TabIndex = 3;
             this.btnLugares.Text = "Lugares";
             this.btnLugares.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLugares.Click += new System.EventHandler(this.btnLugares_Click);
             // 
             // btnOcorrencias
             // 

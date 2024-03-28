@@ -39,6 +39,9 @@
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.25.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.25.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -126,6 +129,12 @@
     <Compile Include="Cofiguracoes.Designer.cs">
       <DependentUpon>Cofiguracoes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estacionamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estacionamento.Designer.cs">
+      <DependentUpon>Estacionamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +152,12 @@
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="O.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="O.Designer.cs">
+      <DependentUpon>O.cs</DependentUpon>
     </Compile>
     <Compile Include="Pagamentos.cs">
       <SubType>UserControl</SubType>
@@ -170,6 +185,9 @@
     <EmbeddedResource Include="Cofiguracoes.resx">
       <DependentUpon>Cofiguracoes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estacionamento.resx">
+      <DependentUpon>Estacionamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.pt-PT.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="O.resx">
+      <DependentUpon>O.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pagamentos.resx">
       <DependentUpon>Pagamentos.cs</DependentUpon>

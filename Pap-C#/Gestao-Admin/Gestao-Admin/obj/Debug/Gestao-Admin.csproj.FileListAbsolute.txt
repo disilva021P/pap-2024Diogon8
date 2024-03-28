@@ -55,3 +55,6 @@ C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Adm
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Cofiguracoes.resources
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao-A.E8044FFC.Up2Date
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Pagamentos.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\bin\Debug\Control.Draggable.dll
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Estacionamento.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Ocorrencias.resources

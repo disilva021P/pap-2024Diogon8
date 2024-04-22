@@ -110,6 +110,7 @@
             this.btnFecharLogin.FillColor = System.Drawing.Color.Red;
             this.btnFecharLogin.IconColor = System.Drawing.Color.White;
             this.btnFecharLogin.Name = "btnFecharLogin";
+            this.btnFecharLogin.Click += new System.EventHandler(this.btnFecharLogin_Click);
             // 
             // btnMinimizarLogin
             // 

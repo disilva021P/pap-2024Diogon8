@@ -135,6 +135,12 @@
     <Compile Include="Estacionamento.Designer.cs">
       <DependentUpon>Estacionamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstacionamentoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EstacionamentoControl.Designer.cs">
+      <DependentUpon>EstacionamentoControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,12 @@
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lugar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lugar.Designer.cs">
+      <DependentUpon>Lugar.cs</DependentUpon>
     </Compile>
     <Compile Include="O.cs">
       <SubType>UserControl</SubType>
@@ -188,6 +200,9 @@
     <EmbeddedResource Include="Estacionamento.resx">
       <DependentUpon>Estacionamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EstacionamentoControl.resx">
+      <DependentUpon>EstacionamentoControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.pt-PT.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lugar.resx">
+      <DependentUpon>Lugar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="O.resx">
       <DependentUpon>O.cs</DependentUpon>

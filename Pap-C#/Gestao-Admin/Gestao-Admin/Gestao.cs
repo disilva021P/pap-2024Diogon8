@@ -153,6 +153,11 @@ namespace Gestao_Admin
             Pagamentos panlepagamento = new Pagamentos(users);
             return panlepagamento;
         }
+        public EstacionamentoControl carregarEstacionamento()
+        {
+            EstacionamentoControl panelEstacionamento = new EstacionamentoControl(users);
+            return panelEstacionamento;
+        }
         public Panel ObterPainelPrincipal()
         {
             return PanelPrincipal;
@@ -165,8 +170,10 @@ namespace Gestao_Admin
 
         private void btnLugares_Click(object sender, EventArgs e)
         {
-            Form estacionamento = new Estacionamento(2);
-            estacionamento.ShowDialog();
+            EstacionamentoControl panelEstacionamento = carregarEstacionamento();
+            PanelPrincipal.Controls.Clear();
+            PanelPrincipal.Controls.Add(panelEstacionamento);
+            PanelPrincipal.BringToFront();
         }
     }
 }

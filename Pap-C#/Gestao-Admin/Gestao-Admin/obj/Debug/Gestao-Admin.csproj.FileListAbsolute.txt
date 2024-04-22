@@ -58,3 +58,5 @@ C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Adm
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\bin\Debug\Control.Draggable.dll
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Estacionamento.resources
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Ocorrencias.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.EstacionamentoControl.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Lugar.resources

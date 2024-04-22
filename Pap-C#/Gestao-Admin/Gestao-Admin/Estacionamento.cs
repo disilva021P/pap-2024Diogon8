@@ -1,8 +1,10 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
@@ -21,36 +23,12 @@ namespace Gestao_Admin
         public Estacionamento(int n_lugares)
         {
             InitializeComponent();
-            this.n_lugares = n_lugares;
+            EstacionamentoControl ec = new EstacionamentoControl(n_lugares);
+            this.panelEstacionamentoEdit.Controls.Add(ec);
         }
-
         private void Estacionamento_Load(object sender, EventArgs e)
         {
-            CriarNovoPainelInicial();
-            lblPorInserir.Text = n_lugares.ToString();
-        }
-
-        private void CriarNovoPainelInicial()
-        {
-            for(int i = -9; i < 117 ; i++) 
-            {
-                Panel currentPanel = new Panel
-                {
-                    Size = new Size(100, 80),
-                    BackColor = Color.Blue,
-                    BorderStyle = BorderStyle.FixedSingle,
-                    Name = i.ToString(),
-                    
-                        
-                };
-                if (i < 0)
-                    currentPanel.Enabled = false;
-                Panel.Controls.Add(currentPanel);
-            }
             
-
-            
-
         }
 
 
@@ -62,40 +40,43 @@ namespace Gestao_Admin
 
         private void Lugar_MouseDown(object sender, MouseEventArgs e)
         {
-            clicado=true;
         }
 
-        private void Lugar_MouseUp(object sender, MouseEventArgs e)
+
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
-            clicado = false;
-            Control controleSobOMouse = Panel.GetChildAtPoint(e.Location);
-            if(controleSobOMouse == null)
+
+            if (lugaresnopainel.Count < n_lugares)
             {
-                return; 
-            }
-            if(!controleSobOMouse.Enabled)
-            {
-                return ;
-            }
-            int lugar = Convert.ToInt32(controleSobOMouse.Name);
-            if (lugaresnopainel.Contains(lugar))
-            {
+                PopUp erro = new PopUp("Tem que escolher os lugares todos!", 1);
+                erro.ShowDialog();
                 return;
             }
-            if(lugaresnopainel.Count< n_lugares)
+            using(MySqlConnection conn = new MySqlConnection(LoginAdmin.connectionString))
             {
-                controleSobOMouse.BackColor = Color.Red;
-                lugaresnopainel.Add(lugar);
-                lblLugaresInseridos.Text = lugaresnopainel.Count.ToString();
-                lblPorInserir.Text = (n_lugares - lugaresnopainel.Count).ToString();
-            }
-            else
-            {
-                PopUp erro = new PopUp("Já desenhou todos o lugares possivei, se quiser adicionar mais volte nas configurações e aumente o valor", 1);
-                erro.ShowDialog();
+                conn.Open();
+                string sql = "UPDATE lugar SET nLugarGrid=@grid where Nlugar=@lugar ";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                for (int i = 0; i < n_lugares; i++)
+                {
+                    cmd.Parameters.AddWithValue("@grid", lugaresnopainel[i]);
+                    cmd.Parameters.AddWithValue("@lugar", i+1);
+                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+                }
+                conn.Close();
             }
             
-                
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            PopUp confirmar = new PopUp("Tem a certeza que deseja sair?", 4);
+            confirmar.ShowDialog();
+            if (PopUp.Valor)
+            {
+                Application.Exit();
+            }   
         }
     }
 }

@@ -36,6 +36,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn2 = new Guna.UI2.WinForms.Guna2Button();
             this.btn1 = new Guna.UI2.WinForms.Guna2Button();
+            this.txtLugares = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.txtLugares);
             this.guna2Panel1.Controls.Add(this.mensagem);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -115,6 +117,27 @@
             this.btn1.Text = "Ok";
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
+            // txtLugares
+            // 
+            this.txtLugares.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLugares.DefaultText = "";
+            this.txtLugares.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLugares.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLugares.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLugares.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLugares.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLugares.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLugares.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLugares.Location = new System.Drawing.Point(49, 122);
+            this.txtLugares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLugares.Name = "txtLugares";
+            this.txtLugares.PasswordChar = '\0';
+            this.txtLugares.PlaceholderText = "Número de lugares";
+            this.txtLugares.SelectedText = "";
+            this.txtLugares.Size = new System.Drawing.Size(229, 48);
+            this.txtLugares.TabIndex = 2;
+            this.txtLugares.Visible = false;
+            // 
             // PopUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -141,5 +164,6 @@
         private Guna.UI2.WinForms.Guna2Button btn2;
         private Guna.UI2.WinForms.Guna2Button btn1;
         private System.Windows.Forms.Label mensagem;
+        private Guna.UI2.WinForms.Guna2TextBox txtLugares;
     }
 }

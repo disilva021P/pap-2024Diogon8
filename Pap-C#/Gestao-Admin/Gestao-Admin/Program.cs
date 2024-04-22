@@ -41,7 +41,7 @@ namespace Gestao_Admin
                     }
                     reader.Close();
                 }
-
+                connection.Close();
 
 
             }

@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -76,48 +77,50 @@ namespace Gestao_Admin
                 lugaresmarcados = false;
             }
         }
-
+        public bool Pago;
         private void btnConf_Click(object sender, EventArgs e)
         {
             if (pago != null || lugaresmarcados != null)
             {
-                using (MySqlConnection connection = new MySqlConnection(LoginAdmin.connectionString))
+                if (!(bool)lugaresmarcados)
                 {
-                    connection.Open();
-                    string query = "Insert into confs(ConfigPago,LugaresMarcados) Values (@pago,@lugares);";
-                    MySqlCommand cmd = new MySqlCommand(query, connection);
-                    if ((bool)pago)
+                    using (MySqlConnection connection = new MySqlConnection(LoginAdmin.connectionString))
                     {
-                        cmd.Parameters.AddWithValue("@pago", 1);
-                    }
-                    else
-                    {
-                        cmd.Parameters.AddWithValue("@pago", 0);
-                    }
-                    if ((bool)lugaresmarcados)
-                    {
-                        cmd.Parameters.AddWithValue("@lugares", 1);
-                    }
-                    else
-                    {
+                        connection.Open();
+                        string query = "Insert into confs(ConfigPago,LugaresMarcados) Values (@pago,@lugares);";
+                        MySqlCommand cmd = new MySqlCommand(query, connection);
+                        if ((bool)pago)
+                        {
+                            cmd.Parameters.AddWithValue("@pago", 1);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@pago", 0);
+                        }
                         cmd.Parameters.AddWithValue("@lugares", 0);
-                    }
-                    int rowsAffected = cmd.ExecuteNonQuery();
+                        int rowsAffected = cmd.ExecuteNonQuery();
 
-                    if (rowsAffected > 0)
-                    {
-                        this.Hide();
-                        PopUp bemsucedido = new PopUp("Configurações definidas!", 1);
-                        bemsucedido.ShowDialog();
-                        LoginAdmin form = new LoginAdmin();
-                        form.ShowDialog();
-                    }
-                    else
-                    {
-                        PopUp erro = new PopUp("Erro ao adicionar configurações tente denovo!", 1);
-                        erro.ShowDialog();
+                        if (rowsAffected > 0)
+                        {
+                            this.Hide();
+                            PopUp bemsucedido = new PopUp("Configurações definidas!", 1);
+                            bemsucedido.ShowDialog();
+                            LoginAdmin form = new LoginAdmin();
+                            form.ShowDialog();
+                        }
+                        else
+                        {
+                            PopUp erro = new PopUp("Erro ao adicionar configurações tente denovo!", 1);
+                            erro.ShowDialog();
+                        }
                     }
                 }
+                else
+                {
+                    PopUp finalizar = new PopUp(5,(bool)pago);
+                    finalizar.ShowDialog();
+                }
+                
             }
             else
             {

@@ -73,9 +73,7 @@ namespace Gestao_Admin
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
-
                         string sqlQuery = "SELECT nivel FROM utilizadorlogin WHERE nif=@nif AND password=@password AND (nivel=1 OR nivel=2);";
-
                         using (MySqlCommand cmd = new MySqlCommand(sqlQuery, connection))
                         {
                             cmd.Parameters.AddWithValue("@nif", nif);
@@ -85,6 +83,8 @@ namespace Gestao_Admin
                             {
                                 nivel = dr.GetInt32(0);
                                 this.Hide();
+                                Estacionamento est = new Estacionamento(25);
+                                est.ShowDialog();
                                 Form formGestao = new Gestao();
                                 formGestao.ShowDialog();
                                 if (!PopUp.Valor)
@@ -121,6 +121,11 @@ namespace Gestao_Admin
             {
                 btnLogin_Click(sender, e);
             }
+        }
+
+        private void btnFecharLogin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -16,5 +16,10 @@ namespace Gestao_Admin
         {
             InitializeComponent();
         }
+
+        private void Ocorrencias_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

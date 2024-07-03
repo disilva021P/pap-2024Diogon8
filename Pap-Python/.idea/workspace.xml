@@ -2,40 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f888d2d3-4be0-4763-9318-92f1d28208ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/Models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/app/src/main/java/com/example/apppap/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pap-Telemovel/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/0ff24326-680d-49b9-ade0-3cd20a1993d1.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/8aad902b-fe4e-48da-8b71-ecf3888b2f44.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/dc827e04-a326-4b5b-a732-77a76ffab6e8.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/e2e911fd-d549-41bc-920e-51fcaa0d4f5c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/08b8d3a9-b327-474e-bc9e-b4b50048f24d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/147fc452-b0ce-482e-9396-bae2d0f0ba49.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/b77c9707-46c2-4ca9-84da-aba218f99e4b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/c9e0b570-81f6-4da8-ab5a-31e5a90646b5.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/FileContentIndex/e457b446-ae1a-4d50-8ffe-afef2c712ce8.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/.vs/Gestao-Admin/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/.vs/Gestao-Admin.csproj.dtbcache.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/.vs/Gestao-Admin.csproj.dtbcache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/AdicionarUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/AdicionarUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/ClassesBd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/ClassesBd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Cofiguracoes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Cofiguracoes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Estacionamento.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Estacionamento.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/EstacionamentoControl.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/EstacionamentoControl.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/EstacionamentoControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/EstacionamentoControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao-Admin.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao-Admin.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Gestao.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Home.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Lugar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Lugar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/O.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/O.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/O.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/O.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/O.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/O.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/PopUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Bunifu.Licensing.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Bunifu.UI.WinForms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Bunifu.UI.WinForms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/Gestao-Admin.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/pt-PT/Gestao-Admin.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/bin/Debug/pt-PT/Gestao-Admin.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.csproj.GenerateResource.cache" afterDir="false" />
@@ -43,17 +39,10 @@
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao-Admin.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao_Admin.Gestao.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/Gestao_Admin.Gestao.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/pt-PT/Gestao-Admin.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/obj/Debug/pt-PT/Gestao-Admin.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/Gestao-Admin/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/Bunifu.UI.WinForms.6.3.0.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/lib/net452/Bunifu.Licensing.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/lib/net452/Bunifu.UI.WinForms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pap-C#/Gestao-Admin/packages/Bunifu.UI.WinForms.6.3.0/lib/net452/Bunifu.UI.WinForms.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/ConexaoFisico-Software.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/ConexaoFisico-Software.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConexaoFisico-Software-Portão/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script-email/EnviaEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/script-email/EnviaEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scriptPagamentosRegistos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scriptPagamentosRegistos/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scriptPagamentosRegistos/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/scriptPagamentosRegistos/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pap-Telemovel/app/src/main/java/com/example/apppap/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Pap-Telemovel/app/src/main/java/com/example/apppap/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }

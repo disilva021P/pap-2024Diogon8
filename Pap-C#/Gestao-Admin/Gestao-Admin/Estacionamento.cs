@@ -25,7 +25,7 @@ namespace Gestao_Admin
             InitializeComponent();
             EstacionamentoControl ec = new EstacionamentoControl(n_lugares);
             this.panelEstacionamentoEdit.Controls.Add(ec);
-        }
+        } 
         private void Estacionamento_Load(object sender, EventArgs e)
         {
             

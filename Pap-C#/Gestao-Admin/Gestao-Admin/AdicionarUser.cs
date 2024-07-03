@@ -2,13 +2,9 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
 using System.Windows.Forms;
 
 namespace Gestao_Admin
@@ -21,6 +17,7 @@ namespace Gestao_Admin
         Utilizador utilizador;
         string caminhoDaImagem;
         int edicao=-1;
+        bool troca=false;
         public AdicionarUser(List<Utilizador> users)
         {
             InitializeComponent();
@@ -42,10 +39,8 @@ namespace Gestao_Admin
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    // Obter o caminho do arquivo selecionado
                     caminhoDaImagem = openFileDialog.FileName;
 
-                    // Carregar a imagem no PictureBox
                     ImagemAdicionar.Image = Image.FromFile(caminhoDaImagem);
                 }
             }
@@ -74,6 +69,7 @@ namespace Gestao_Admin
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
+
             if (!string.IsNullOrEmpty(txtNif.Text) &&
                 !string.IsNullOrEmpty(txtEmail.Text) &&
                 !string.IsNullOrEmpty(txtNome.Text) &&
@@ -102,6 +98,30 @@ namespace Gestao_Admin
                 u.IdPlano = planos[cbPlanoUser.SelectedIndex].Titulo;
                 u.IdLocalizacao = "Fora";
                 users.Add(u);
+                string nomePlano = u.IdPlano;
+                string intervalo = "";
+                if (nomePlano.Contains("Quinzenal"))
+                {
+                    intervalo = "15 DAY";
+                }
+                else if (nomePlano.Contains("Mensal"))
+                {
+                    intervalo = "1 MONTH";
+                }
+                else if (nomePlano.Contains("Trimestral"))
+                {
+                    intervalo = "3 MONTH";
+                }
+                else if (nomePlano.Contains("Anual"))
+                {
+                    intervalo = "1 YEAR";
+                }
+                else
+                {
+                    intervalo = "1 MINUTE";
+                }
+                string apiUrlCriar = $"http://127.0.0.1:5000/criarEvento/?nif={u.Nif}&intervalo={intervalo}"; // Substitua pela URL da sua API
+                string apiUrlDrop = $"http://127.0.0.1:5000/dropEvento/?nif={u.Nif}";
                 if (edicao == -1)
                 {
                     if(u.Foto == null)
@@ -143,6 +163,20 @@ namespace Gestao_Admin
                         }
                         else
                         {
+                            if (cbEstado.SelectedIndex != 0)
+                            {
+                                try
+                                {
+                                    enviarRequesicaoCriar(apiUrlCriar);
+                                }
+                                catch (Exception ex) { }
+                            }
+                            string sqlLogin = "INSERT into utilizadorlogin(nif,password,nivel) VALUES (@n,@p,@nivel)";
+                            MySqlCommand cmdLogin = new MySqlCommand(sqlLogin, connection);
+                            cmdLogin.Parameters.AddWithValue("@n", u.Nif);
+                            cmdLogin.Parameters.AddWithValue("@p", u.Nif.ToString()+u.Nome);
+                            cmdLogin.Parameters.AddWithValue("@nivel", 0);
+                            cmdLogin.ExecuteNonQuery();
                             connection.Close();
                             btnVoltar_Click(sender, e);
                         }
@@ -183,6 +217,10 @@ namespace Gestao_Admin
                         if (cbPlanoUser.SelectedIndex != -1)
                         {
                             cmd.Parameters.AddWithValue("@IdPlano", planos[cbPlanoUser.SelectedIndex].IdPlano);
+                            troca = true;
+                            
+
+
                         }
                         if (cmd.ExecuteNonQuery() <= 0)
                         {
@@ -191,11 +229,33 @@ namespace Gestao_Admin
                         }
                         else
                         {
+                            if (troca && u.IdPlano != utilizador.IdPlano)
+                            {
+                                try
+                                {
+                                    enviarRequesicaoDrop(apiUrlDrop);
+                                }
+                                catch (Exception ex) { }
+                                if (cbEstado.SelectedIndex != 0)
+                                {
+                                    try
+                                    {
+                                        enviarRequesicaoCriar(apiUrlCriar);
+                                    }
+                                    catch (Exception ex) { }
+                                }
+                                
+
+                            }
+                            troca = false;
+                            
                             connection.Close();
                             users.RemoveAll(ut => ut.Nif == edicao);
                             users.Add(u);
                             btnVoltar_Click(sender, e);
                         }
+
+                        
                         connection.Close();
                     }
                 }
@@ -247,6 +307,8 @@ namespace Gestao_Admin
             }
             if (edicao != -1)
             {
+                dgvCarros.Visible = true;
+                preencher_tabela();
                 btnAdicionar.Text = "Editar";
                 txtNif.Enabled = false;
                 txtNif.Text = utilizador.Nif.ToString();
@@ -277,6 +339,54 @@ namespace Gestao_Admin
                 cbPlanoUser.Text = utilizador.IdPlano;
             } 
 
+        }
+        public async void enviarRequesicaoCriar(string url)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync(url);
+            }
+        }
+        public async void enviarRequesicaoDrop(string url)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync(url);
+            }
+        }
+
+        private async void dgvCarros_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            
+        }
+
+        private async void dgvCarros_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            
+        }
+        private void preencher_tabela()
+        {
+            using (MySqlConnection connection = new MySqlConnection(LoginAdmin.connectionString))
+            {
+                connection.Open();
+                string sql = "Select * from carroutilizador,carro where idUtilizador=123456789 and carro.idCarro=carroutilizador.idCarro";
+                MySqlCommand mySqlCommand = new MySqlCommand(sql, connection);
+                MySqlDataReader dr = mySqlCommand.ExecuteReader();
+                while (dr.Read())
+                {
+                    dgvCarros.Rows.Add(dr.GetInt32(3),dr.GetString(4),dr.GetString(5));
+                }
+                dr.Close();
+                connection.Close();
+            }
+        }
+
+        private async void dgvCarros_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync($"http://127.0.0.1:5000/removerCarros/?api_key=PALAVRAPASSULTRASECRETA:O!okjachega&nif={User.nifSelecionado}&idCarro={dgvCarros.Rows[e.Row.Index].Cells[0].Value.ToString()}");
+            }
         }
     }
 }

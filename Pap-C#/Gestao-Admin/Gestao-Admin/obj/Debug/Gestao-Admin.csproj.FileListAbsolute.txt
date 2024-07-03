@@ -60,3 +60,8 @@ C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Adm
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Ocorrencias.resources
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.EstacionamentoControl.resources
 C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.Lugar.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.UtilizadorInfo.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.SelecaoUsers.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.EstacionamentoCriar.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.OcorrenciaControl.resources
+C:\Users\Aorus\Desktop\Pap\Pap-C#\Gestao-Admin\Gestao-Admin\obj\Debug\Gestao_Admin.MostrarOcorrencia.resources

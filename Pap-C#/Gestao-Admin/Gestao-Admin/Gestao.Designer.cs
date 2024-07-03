@@ -40,6 +40,10 @@
             this.btnLugares = new Guna.UI2.WinForms.Guna2Button();
             this.btnOcorrencias = new Guna.UI2.WinForms.Guna2Button();
             this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnAbrirPortao = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnFecharPortao = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.PanelPrincipal.SuspendLayout();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +80,9 @@
             // 
             this.PanelPrincipal.AccessibleName = "PanelPrincipal";
             this.PanelPrincipal.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PanelPrincipal.Controls.Add(this.btnFecharPortao);
+            this.PanelPrincipal.Controls.Add(this.btnAbrirPortao);
+            this.PanelPrincipal.Controls.Add(this.label1);
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(120, 0);
             this.PanelPrincipal.Name = "PanelPrincipal";
@@ -104,6 +111,7 @@
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // Menu
             // 
@@ -120,6 +128,7 @@
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(120, 1013);
             this.Menu.TabIndex = 0;
+            this.Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.Menu_Paint);
             // 
             // btnSair
             // 
@@ -211,6 +220,7 @@
             this.btnOcorrencias.TabIndex = 2;
             this.btnOcorrencias.Text = "Ocorrências";
             this.btnOcorrencias.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnOcorrencias.Click += new System.EventHandler(this.btnOcorrencias_Click);
             // 
             // btnUsers
             // 
@@ -235,6 +245,50 @@
             this.btnUsers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.label1.Location = new System.Drawing.Point(734, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(217, 95);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "GPE";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnAbrirPortao
+            // 
+            this.btnAbrirPortao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAbrirPortao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAbrirPortao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAbrirPortao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAbrirPortao.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAbrirPortao.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirPortao.Location = new System.Drawing.Point(646, 204);
+            this.btnAbrirPortao.Name = "btnAbrirPortao";
+            this.btnAbrirPortao.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnAbrirPortao.Size = new System.Drawing.Size(148, 148);
+            this.btnAbrirPortao.TabIndex = 1;
+            this.btnAbrirPortao.Text = "Abrir Portão";
+            this.btnAbrirPortao.Click += new System.EventHandler(this.btnAbrirPortao_Click);
+            // 
+            // btnFecharPortao
+            // 
+            this.btnFecharPortao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFecharPortao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFecharPortao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFecharPortao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFecharPortao.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnFecharPortao.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFecharPortao.ForeColor = System.Drawing.Color.White;
+            this.btnFecharPortao.Location = new System.Drawing.Point(884, 204);
+            this.btnFecharPortao.Name = "btnFecharPortao";
+            this.btnFecharPortao.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnFecharPortao.Size = new System.Drawing.Size(148, 148);
+            this.btnFecharPortao.TabIndex = 2;
+            this.btnFecharPortao.Text = "Fechar Portão";
+            this.btnFecharPortao.Click += new System.EventHandler(this.btnFecharPortao_Click);
+            // 
             // Gestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -247,6 +301,8 @@
             this.Name = "Gestao";
             this.Text = "Gestao";
             this.Load += new System.EventHandler(this.Gestao_Load);
+            this.PanelPrincipal.ResumeLayout(false);
+            this.PanelPrincipal.PerformLayout();
             this.Menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -264,5 +320,8 @@
         private Guna.UI2.WinForms.Guna2Button btnSair;
         private Guna.UI2.WinForms.Guna2Button btnPagamentos;
         private Guna.UI2.WinForms.Guna2Panel PanelPrincipal;
+        private Guna.UI2.WinForms.Guna2CircleButton btnFecharPortao;
+        private Guna.UI2.WinForms.Guna2CircleButton btnAbrirPortao;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -1,14 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Design;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestao_Admin
@@ -118,9 +110,9 @@ namespace Gestao_Admin
                         }
                         connection.Close();
                     }
-                    Estacionamento est = new Estacionamento(val);
-                    est.ShowDialog();
                     this.Hide();
+                    EstacionamentoCriar est = new EstacionamentoCriar(val);
+                    est.ShowDialog();
                     PopUp sucesso = new PopUp("Configurações inseridas\n Bom Proveito!", 1);
                     sucesso.ShowDialog();
                     LoginAdmin form = new LoginAdmin();

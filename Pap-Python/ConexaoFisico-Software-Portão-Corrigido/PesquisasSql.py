@@ -8,7 +8,6 @@ conexao_config = {
 }
 
 def updateLocalusers(nif):
-    print(nif)
     conexao = mysql.connector.connect(**conexao_config)
     cursor = conexao.cursor()
     consulta_sql = (f"update utilizador set idlocalizao=1 where nif={int(nif)}")
@@ -16,7 +15,14 @@ def updateLocalusers(nif):
     cursor.close()
     conexao.commit()
     conexao.close()
-
+def updateLocalusersSair(nif):
+    conexao = mysql.connector.connect(**conexao_config)
+    cursor = conexao.cursor()
+    consulta_sql = (f"update utilizador set idlocalizao=0 where nif={int(nif)}")
+    cursor.execute(consulta_sql)
+    cursor.close()
+    conexao.commit()
+    conexao.close()
 def pesquisaMatricula(matricula):
     conexao = mysql.connector.connect(**conexao_config)
     cursor = conexao.cursor()

@@ -49,13 +49,19 @@ def lerplaca():
                                     f'O utilizador {user[0][0]} entrou no parque com a matricula {texto}: ' + str(
                                         datetime.now()))
                                 nao_encontrou = False
+                            elif len(user) == 1 and user[0][1] == 1 and user[0][
+                                2] == 1:  # o carro só tiver 1 utilizador e estiver fora e estiver ativo
+                                updateLocalusersSair(user[0][0])
+                                logging.info(
+                                    f'O utilizador {user[0][0]} saiu no parque com a matricula {texto}: ' + str(
+                                        datetime.now()))
+                                nao_encontrou = False
+
                             elif len(user)==2 and (user[0][1]==0 or user[1][1]==0) and (user[1][2]==1 or user[1][2]==1):
-                                print("entraste")
                                 if user[0][1]==0 and user[0][2]==1:
                                     updateLocalusers(user[0][0])
                                     logging.info(f'O utilizador {user[0][0]} entrou no parque com a matricula {texto}: ' + str(
                                             datetime.now()))
-                                    updateLocalusers(user[0][0])
                                     nao_encontrou = False
                                 elif user[1][1]==0 and user[1][2]==1:
                                     logging.info(
@@ -64,14 +70,25 @@ def lerplaca():
                                     updateLocalusers(user[1][0])
                                     nao_encontrou = False
 
+                            elif len(user)==2 and (user[0][1]==1 and user[1][1]==1) and (user[1][2]==1 or user[1][2]==1):
+                                if user[0][1]==1 and user[0][2]==1:
+                                    updateLocalusersSair(user[0][0])
+                                    logging.info(f'O utilizador {user[0][0]} saiu no parque com a matricula {texto}: ' + str(
+                                            datetime.now()))
+                                    nao_encontrou = False
+                                elif user[1][1]==1 and user[1][2]==1:
+                                    logging.info(
+                                        f'O utilizador {user[1][0]} saiu no parque com a matricula {texto}: ' + str(
+                                            datetime.now()))
+                                    updateLocalusersSair(user[1][0])
+                                    nao_encontrou = False
 
-                    print(texto)
+
 
         cv2.imshow("Result", img)
         key = cv2.waitKey(1)
         if key == ord('q'):
             break
-
     Portao.abrir_portao()
     camara.release()
     cv2.destroyAllWindows()
@@ -104,7 +121,6 @@ def verificarCarro(placaRecebida):
                     if len(texto) == 6:
                         if texto == placaRecebida:
                             return True
-                    print(texto)
 
         cv2.imshow("Result", img)
         key = cv2.waitKey(1)
@@ -123,7 +139,6 @@ def main():
         carroParado = verificarCarro(placaAtual)
         while carroParado:
             carroParado = verificarCarro(placaAtual)
-            print("carro parado")
         Portao.fechar_portao()
         time.sleep(2)
 

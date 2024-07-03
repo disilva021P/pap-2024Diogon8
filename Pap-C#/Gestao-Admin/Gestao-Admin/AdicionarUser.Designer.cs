@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ImagemAdicionar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnCarregarImagem = new Guna.UI2.WinForms.Guna2Button();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2Button();
@@ -53,7 +56,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtComentario = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dgvCarros = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ImagemAdicionar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarros)).BeginInit();
             this.SuspendLayout();
             // 
             // ImagemAdicionar
@@ -212,9 +222,10 @@
             // dataNascimento
             // 
             this.dataNascimento.Checked = true;
+            this.dataNascimento.FillColor = System.Drawing.Color.White;
             this.dataNascimento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dataNascimento.Location = new System.Drawing.Point(531, 186);
+            this.dataNascimento.Location = new System.Drawing.Point(743, 488);
             this.dataNascimento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataNascimento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataNascimento.Name = "dataNascimento";
@@ -305,9 +316,10 @@
             // dataInscricao
             // 
             this.dataInscricao.Checked = true;
+            this.dataInscricao.FillColor = System.Drawing.Color.White;
             this.dataInscricao.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dataInscricao.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dataInscricao.Location = new System.Drawing.Point(707, 132);
+            this.dataInscricao.Location = new System.Drawing.Point(743, 413);
             this.dataInscricao.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataInscricao.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataInscricao.Name = "dataInscricao";
@@ -406,10 +418,110 @@
             this.txtComentario.Size = new System.Drawing.Size(229, 48);
             this.txtComentario.TabIndex = 25;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(687, 464);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 16);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Data de Nascimento";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(687, 391);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 16);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Data de Inscrição";
+            // 
+            // dgvCarros
+            // 
+            this.dgvCarros.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvCarros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCarros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCarros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCarros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.Matricula,
+            this.Marca});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCarros.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCarros.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCarros.Location = new System.Drawing.Point(698, 542);
+            this.dgvCarros.Name = "dgvCarros";
+            this.dgvCarros.RowHeadersVisible = false;
+            this.dgvCarros.RowHeadersWidth = 51;
+            this.dgvCarros.RowTemplate.Height = 24;
+            this.dgvCarros.Size = new System.Drawing.Size(274, 150);
+            this.dgvCarros.TabIndex = 29;
+            this.dgvCarros.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCarros.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvCarros.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvCarros.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvCarros.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvCarros.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCarros.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCarros.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvCarros.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCarros.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCarros.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvCarros.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCarros.ThemeStyle.HeaderStyle.Height = 18;
+            this.dgvCarros.ThemeStyle.ReadOnly = false;
+            this.dgvCarros.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCarros.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvCarros.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCarros.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCarros.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvCarros.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCarros.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCarros.Visible = false;
+            this.dgvCarros.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvCarros_RowsAdded);
+            this.dgvCarros.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvCarros_RowsRemoved);
+            this.dgvCarros.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgvCarros_UserDeletingRow);
+            // 
+            // id
+            // 
+            this.id.HeaderText = "ID";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.Visible = false;
+            // 
+            // Matricula
+            // 
+            this.Matricula.HeaderText = "Matricula";
+            this.Matricula.MinimumWidth = 6;
+            this.Matricula.Name = "Matricula";
+            // 
+            // Marca
+            // 
+            this.Marca.HeaderText = "Marca";
+            this.Marca.MinimumWidth = 6;
+            this.Marca.Name = "Marca";
+            // 
             // AdicionarUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dgvCarros);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtComentario);
             this.Controls.Add(this.label2);
@@ -439,6 +551,7 @@
             this.Size = new System.Drawing.Size(1925, 1013);
             this.Load += new System.EventHandler(this.AdicionarUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ImagemAdicionar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,5 +584,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtComentario;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvCarros;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Matricula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
     }
 }

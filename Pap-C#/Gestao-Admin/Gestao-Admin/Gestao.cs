@@ -2,12 +2,8 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +13,6 @@ namespace Gestao_Admin
     {
         bool menu_aberto = false;
         List<Guna2Button> botoesMenu = new List<Guna2Button>();
-        List<Utilizador> users = new List<Utilizador>();
         public Gestao()
         {
             InitializeComponent();
@@ -32,7 +27,6 @@ namespace Gestao_Admin
             botoesMenu.Add(btnLugares);
             botoesMenu.Add(btnPagamentos);
             botoesMenu.Add(btnSair);
-            preencheUsers();
         }
         
         private async void btn_menu_ClickAsync(object sender, EventArgs e)
@@ -109,53 +103,24 @@ namespace Gestao_Admin
             PanelPrincipal.Controls.Add(utilizadores);
             PanelPrincipal.BringToFront();
         }
-        void preencheUsers()
-        {
-            users.Clear();
-            using (MySqlConnection connection = new MySqlConnection(LoginAdmin.connectionString))
-            {
-                connection.Open();
-                string query = "SELECT nif, nome, sobrenome, morada, dataNascimento, email, foto,comentarios,numero,dataInscricao,nOcorrenciasCometidas," +
-                    "(SELECT estado FROM estadoutilizador WHERE idEstadoUtilizador = utilizador.idEstadoUtilizador) AS estado_utilizador," +
-                    "(SELECT titulo FROM planos WHERE idPlano = utilizador.idplano) AS nome_plano," +
-                    "(SELECT localizacaoTxt FROM localizacao WHERE idlocalizacao = utilizador.idlocalizao) AS localizacao FROM    utilizador;";
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-                MySqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    Utilizador u = new Utilizador();
-                    u.Nif = dr.GetInt32(0);
-                    u.Nome = dr.GetString(1);
-                    u.Sobrenome = dr.GetString(2);
-                    u.Morada = dr.GetString(3);
-                    u.DataNascimento = dr.GetDateTime(4).Date;
-                    u.Email = dr.GetString(5);
-                    u.Foto = (byte[])dr[6];
-                    u.Comentarios = dr.GetString(7);
-                    u.Numero = dr.GetString(8);
-                    u.DataInscricao = dr.GetDateTime(9).Date;
-                    u.NOcorrenciasCometidas = dr.GetInt32(10);
-                    u.IdEstadoUtilizador = dr.GetString(11);
-                    u.IdPlano = dr.GetString(12);
-                    u.IdLocalizacao = dr.GetString(13);
-                    users.Add(u);
-                }
-                dr.Close();
-            }
-        }
         public UserControl carregarUsers()
         {
-            UserControl utilizadores = new Utilizadores(users);
+            UserControl utilizadores = new Utilizadores(Utilizador.getUsers());
             return utilizadores;
         }
         public Pagamentos carregarPagamentos()
         {
-            Pagamentos panlepagamento = new Pagamentos(users);
+            Pagamentos panlepagamento = new Pagamentos(Utilizador.getUsers());
             return panlepagamento;
         }
         public EstacionamentoControl carregarEstacionamento()
         {
-            EstacionamentoControl panelEstacionamento = new EstacionamentoControl(users);
+            EstacionamentoControl panelEstacionamento = new EstacionamentoControl(Utilizador.getUsers());
+            return panelEstacionamento;
+        }
+        public Ocorrencias carregarOcorrencias()
+        {
+            Ocorrencias panelEstacionamento = new Ocorrencias();
             return panelEstacionamento;
         }
         public Panel ObterPainelPrincipal()
@@ -170,10 +135,72 @@ namespace Gestao_Admin
 
         private void btnLugares_Click(object sender, EventArgs e)
         {
+            User.nifSelecionado = 0;
             EstacionamentoControl panelEstacionamento = carregarEstacionamento();
             PanelPrincipal.Controls.Clear();
             PanelPrincipal.Controls.Add(panelEstacionamento);
             PanelPrincipal.BringToFront();
         }
+
+        private void btnOcorrencias_Click(object sender, EventArgs e)
+        {
+            Ocorrencias panelEstacionamento = carregarOcorrencias();
+            PanelPrincipal.Controls.Clear();
+            PanelPrincipal.Controls.Add(panelEstacionamento);
+            PanelPrincipal.BringToFront();
+        }
+
+        private void Menu_Paint(object sender, PaintEventArgs e)
+        {
+            using (MySqlConnection connection = new MySqlConnection(LoginAdmin.connectionString))
+            {
+                connection.Open();
+                string query = "SELECT * FROM confs;";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        if (reader.GetInt32("ConfigPago") == 0)
+                        {
+                            btnPagamentos.Visible = false;
+                        }
+                       if(reader.GetInt32("LugaresMarcados")==0)
+                        {
+                            btnLugares.Visible = false;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            User.nifSelecionado = 0;
+            PanelPrincipal.Controls.Clear();
+        }
+
+        private async void btnAbrirPortao_Click(object sender, EventArgs e)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync("http://127.0.0.1:5000/abrir_portao/");
+            }
+        }
+
+        private async void btnFecharPortao_Click(object sender, EventArgs e)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync("http://127.0.0.1:5000/fechar_portao/");
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    
     }
 }

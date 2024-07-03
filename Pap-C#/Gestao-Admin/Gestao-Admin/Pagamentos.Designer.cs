@@ -28,36 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            Guna.Charts.WinForms.ChartFont chartFont17 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont18 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont19 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.ChartFont chartFont20 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid7 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.Tick tick7 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont21 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid8 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.Tick tick8 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont22 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Grid grid9 = new Guna.Charts.WinForms.Grid();
-            Guna.Charts.WinForms.PointLabel pointLabel3 = new Guna.Charts.WinForms.PointLabel();
-            Guna.Charts.WinForms.ChartFont chartFont23 = new Guna.Charts.WinForms.ChartFont();
-            Guna.Charts.WinForms.Tick tick9 = new Guna.Charts.WinForms.Tick();
-            Guna.Charts.WinForms.ChartFont chartFont24 = new Guna.Charts.WinForms.ChartFont();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            Guna.Charts.WinForms.ChartFont chartFont1 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont2 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont3 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont4 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid1 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick1 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont5 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid2 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick2 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont6 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid3 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.PointLabel pointLabel1 = new Guna.Charts.WinForms.PointLabel();
+            Guna.Charts.WinForms.ChartFont chartFont7 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Tick tick3 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont8 = new Guna.Charts.WinForms.ChartFont();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelConfiguracoes = new Guna.UI2.WinForms.Guna2Panel();
+            this.LimparConfig = new Guna.UI2.WinForms.Guna2Button();
             this.cbAno = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbMes = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtPesquisa = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelGlobal = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMedia = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,11 +76,8 @@
             this.ValorPagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nif = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LimparConfig = new Guna.UI2.WinForms.Guna2Button();
             this.panelConfiguracoes.SuspendLayout();
             this.panelGlobal.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.panelTotal.SuspendLayout();
             this.panelUsers.SuspendLayout();
@@ -104,6 +98,24 @@
             this.panelConfiguracoes.Name = "panelConfiguracoes";
             this.panelConfiguracoes.Size = new System.Drawing.Size(1925, 105);
             this.panelConfiguracoes.TabIndex = 3;
+            // 
+            // LimparConfig
+            // 
+            this.LimparConfig.BorderRadius = 25;
+            this.LimparConfig.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LimparConfig.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LimparConfig.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LimparConfig.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LimparConfig.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.LimparConfig.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.LimparConfig.ForeColor = System.Drawing.Color.White;
+            this.LimparConfig.Location = new System.Drawing.Point(405, 21);
+            this.LimparConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LimparConfig.Name = "LimparConfig";
+            this.LimparConfig.Size = new System.Drawing.Size(204, 60);
+            this.LimparConfig.TabIndex = 3;
+            this.LimparConfig.Text = "Limpar";
+            this.LimparConfig.Click += new System.EventHandler(this.btnLimparDefinicoes_Click);
             // 
             // cbAno
             // 
@@ -182,8 +194,6 @@
             // 
             // panelGlobal
             // 
-            this.panelGlobal.Controls.Add(this.guna2Panel4);
-            this.panelGlobal.Controls.Add(this.guna2Panel2);
             this.panelGlobal.Controls.Add(this.guna2Panel1);
             this.panelGlobal.Controls.Add(this.panelTotal);
             this.panelGlobal.Controls.Add(this.panelUsers);
@@ -200,52 +210,6 @@
             this.panelGlobal.Size = new System.Drawing.Size(1925, 911);
             this.panelGlobal.TabIndex = 4;
             this.panelGlobal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGlobal_Paint_1);
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel4.BorderColor = System.Drawing.Color.Black;
-            this.guna2Panel4.BorderRadius = 50;
-            this.guna2Panel4.BorderThickness = 1;
-            this.guna2Panel4.Controls.Add(this.label5);
-            this.guna2Panel4.FillColor = System.Drawing.Color.White;
-            this.guna2Panel4.Location = new System.Drawing.Point(369, 682);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(282, 201);
-            this.guna2Panel4.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(84, 11);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 48);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Total";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
-            this.guna2Panel2.BorderRadius = 50;
-            this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Controls.Add(this.label3);
-            this.guna2Panel2.FillColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(18, 682);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(282, 201);
-            this.guna2Panel2.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(84, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 48);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total";
             // 
             // guna2Panel1
             // 
@@ -378,17 +342,17 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(1115, 37);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(345, 318);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "Pagamentos";
@@ -397,38 +361,38 @@
             // 
             this.gunaChart1.Datasets.AddRange(new Guna.Charts.Interfaces.IGunaDataset[] {
             this.gunaBarDataset});
-            chartFont17.FontName = "Arial";
-            this.gunaChart1.Legend.LabelFont = chartFont17;
+            chartFont1.FontName = "Arial";
+            this.gunaChart1.Legend.LabelFont = chartFont1;
             this.gunaChart1.Location = new System.Drawing.Point(667, 37);
             this.gunaChart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaChart1.Name = "gunaChart1";
             this.gunaChart1.Size = new System.Drawing.Size(419, 318);
             this.gunaChart1.TabIndex = 1;
-            chartFont18.FontName = "Arial";
-            chartFont18.Size = 12;
-            chartFont18.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.gunaChart1.Title.Font = chartFont18;
-            chartFont19.FontName = "Arial";
-            this.gunaChart1.Tooltips.BodyFont = chartFont19;
-            chartFont20.FontName = "Arial";
-            chartFont20.Size = 9;
-            chartFont20.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
-            this.gunaChart1.Tooltips.TitleFont = chartFont20;
-            this.gunaChart1.XAxes.GridLines = grid7;
-            chartFont21.FontName = "Arial";
-            tick7.Font = chartFont21;
-            this.gunaChart1.XAxes.Ticks = tick7;
-            this.gunaChart1.YAxes.GridLines = grid8;
-            chartFont22.FontName = "Arial";
-            tick8.Font = chartFont22;
-            this.gunaChart1.YAxes.Ticks = tick8;
-            this.gunaChart1.ZAxes.GridLines = grid9;
-            chartFont23.FontName = "Arial";
-            pointLabel3.Font = chartFont23;
-            this.gunaChart1.ZAxes.PointLabels = pointLabel3;
-            chartFont24.FontName = "Arial";
-            tick9.Font = chartFont24;
-            this.gunaChart1.ZAxes.Ticks = tick9;
+            chartFont2.FontName = "Arial";
+            chartFont2.Size = 12;
+            chartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.gunaChart1.Title.Font = chartFont2;
+            chartFont3.FontName = "Arial";
+            this.gunaChart1.Tooltips.BodyFont = chartFont3;
+            chartFont4.FontName = "Arial";
+            chartFont4.Size = 9;
+            chartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.gunaChart1.Tooltips.TitleFont = chartFont4;
+            this.gunaChart1.XAxes.GridLines = grid1;
+            chartFont5.FontName = "Arial";
+            tick1.Font = chartFont5;
+            this.gunaChart1.XAxes.Ticks = tick1;
+            this.gunaChart1.YAxes.GridLines = grid2;
+            chartFont6.FontName = "Arial";
+            tick2.Font = chartFont6;
+            this.gunaChart1.YAxes.Ticks = tick2;
+            this.gunaChart1.ZAxes.GridLines = grid3;
+            chartFont7.FontName = "Arial";
+            pointLabel1.Font = chartFont7;
+            this.gunaChart1.ZAxes.PointLabels = pointLabel1;
+            chartFont8.FontName = "Arial";
+            tick3.Font = chartFont8;
+            this.gunaChart1.ZAxes.Ticks = tick3;
             // 
             // gunaBarDataset
             // 
@@ -440,16 +404,16 @@
             this.dgvPagamentos.AllowUserToAddRows = false;
             this.dgvPagamentos.AllowUserToResizeColumns = false;
             this.dgvPagamentos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgvPagamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPagamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvPagamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPagamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPagamentos.ColumnHeadersHeight = 34;
             this.dgvPagamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvPagamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -459,14 +423,14 @@
             this.ValorPagamento,
             this.estado,
             this.Nif});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPagamentos.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPagamentos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPagamentos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPagamentos.Location = new System.Drawing.Point(3, 37);
             this.dgvPagamentos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -541,24 +505,6 @@
             this.Nif.Name = "Nif";
             this.Nif.ReadOnly = true;
             // 
-            // LimparConfig
-            // 
-            this.LimparConfig.BorderRadius = 25;
-            this.LimparConfig.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.LimparConfig.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.LimparConfig.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LimparConfig.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.LimparConfig.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.LimparConfig.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.LimparConfig.ForeColor = System.Drawing.Color.White;
-            this.LimparConfig.Location = new System.Drawing.Point(405, 21);
-            this.LimparConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LimparConfig.Name = "LimparConfig";
-            this.LimparConfig.Size = new System.Drawing.Size(204, 60);
-            this.LimparConfig.TabIndex = 3;
-            this.LimparConfig.Text = "Limpar";
-            this.LimparConfig.Click += new System.EventHandler(this.btnLimparDefinicoes_Click);
-            // 
             // Pagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -572,10 +518,6 @@
             this.panelConfiguracoes.ResumeLayout(false);
             this.panelGlobal.ResumeLayout(false);
             this.panelGlobal.PerformLayout();
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.panelTotal.ResumeLayout(false);
@@ -613,10 +555,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Label lblMedia;
         private Guna.UI2.WinForms.Guna2Button LimparConfig;

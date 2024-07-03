@@ -1,26 +1,12 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.Common;
-using System.Diagnostics.Eventing.Reader;
-using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
-using Google.Protobuf.WellKnownTypes;
-using Guna.Charts.Interfaces;
 using Guna.Charts.WinForms;
 using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.Cms;
 
 namespace Gestao_Admin
 {
@@ -202,7 +188,6 @@ namespace Gestao_Admin
                     for (int i = 0; i < nomes.Length; i++)
                     {
                         series.Points.AddXY(nomes[i], quantidades[i]);
-                        MessageBox.Show(quantidades[i].ToString());
                         if (quantidades[i] > 0)
                         {
                             series.Points[i].Label = quantidades[i].ToString();

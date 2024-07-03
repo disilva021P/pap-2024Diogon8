@@ -21,4 +21,3 @@ def fechar_portao():
     porta_serial.write("1".encode())
     # aqui com tudo encerrado fecha a porta serial
     porta_serial.close()
-    porta_serial.close()

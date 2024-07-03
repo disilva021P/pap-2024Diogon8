@@ -1,3 +1,5 @@
+import time
+
 from PesquisaSQL import *
 def le_serial():
     import serial
@@ -13,10 +15,8 @@ def le_serial():
                     if int(lugar[0]) == 2: # == 2 pois é para exemplificar no caso real
                         # deveria fazer uma query para ver quantos lugares o parque possui
                         # esta seria a query:SELECT MAX(nLugar) AS ultimoLugar FROM lugar;
+                        dados_recebidos = True
                         break
-                for lugar in lugares:
-                    print(f'Lugar: {str(lugar[0])}')
-                    print(f'Estado {str(lugar[1])}')
     except KeyboardInterrupt:
         porta_serial.close()
     finally:
@@ -32,3 +32,4 @@ if __name__ == '__main__':
                 if lugar_bd[0] == lugar_recebido[0] and lugar_bd[1] != lugar_recebido[1]:
                     updateLugar(lugar_bd[0],lugar_recebido[1])
 
+        time.sleep(2)

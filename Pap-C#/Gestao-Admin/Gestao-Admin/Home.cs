@@ -1,14 +1,9 @@
 ﻿using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestao_Admin
@@ -133,42 +128,59 @@ namespace Gestao_Admin
                         {
                             PopUp erro = new PopUp("Não pode remover um Admin sem ser o administrador principal!", 1);
                             erro.ShowDialog();
+                            return;
                         }
-                    }
-                    else
-                    {
                         PopUp remover = new PopUp("Tem a certeza que deseja remover o utilizador com o nif: \n" + User.nifSelecionado.ToString(), 3);
                         remover.ShowDialog();
                         if (PopUp.Valor)
                         {
+                            try
+                            {
                             Utilizador userDelete = users.Where(u => u.Nif == User.nifSelecionado).First();
                             users.Remove(userDelete);
                             string sql = "DELETE FROM utilizador WHERE nif = @n";
                             MySqlCommand cmd = new MySqlCommand(sql, connection);
                             cmd.Parameters.AddWithValue("@n", User.nifSelecionado);
-                            if (cmd.ExecuteNonQuery() > 0)
+                                try
+                                {
+
+
+                                    if (cmd.ExecuteNonQuery() > 0)
+                                    {
+                                        if (PanelUnico.Controls.Count > 0)
+                                        {
+                                            PanelUnico.Controls.Clear();
+                                        }
+                                        foreach (Utilizador u in users)
+                                        {
+                                            User user = new User(u);
+
+                                            PanelUnico.Controls.Add(user);
+                                            User.nifSelecionado = 0;
+
+                                        }
+                                        //string sql1 = "DELETE FROM utilizadorlogin WHERE nif = @n";
+                                        //MySqlCommand cmd1 = new MySqlCommand(sql1, connection);
+                                        //cmd1.Parameters.AddWithValue("@n", User.nifSelecionado);
+                                        PopUp sucesso = new PopUp("Utilizador removido com sucesso!", 1);
+                                        sucesso.ShowDialog();
+                                    }
+                                else
+                                {
+                                    PopUp erro = new PopUp("Erro inesperado", 1);
+                                    erro.ShowDialog();
+                                }
+                                }
+                                catch (Exception ex) { }
+
+                                connection.Close();
+                            }
+                            catch (Exception ex)
                             {
-                                if (PanelUnico.Controls.Count > 0)
-                                {
-                                    PanelUnico.Controls.Clear();
-                                }
-                                foreach (Utilizador u in users)
-                                {
-                                    User user = new User(u);
-
-                                    PanelUnico.Controls.Add(user);
-                                    User.nifSelecionado = 0;
-
-                                }
-                                PopUp sucesso = new PopUp("Utilizador removido com sucesso!", 1);
+                                PopUp sucesso = new PopUp("Não pode remover um utilizador presente, coloque em desativado!", 1);
                                 sucesso.ShowDialog();
+
                             }
-                            else
-                            {
-                                PopUp erro = new PopUp("Erro inesperado", 1);
-                                erro.ShowDialog();
-                            }
-                            connection.Close();
                         }
                     }
                     }
